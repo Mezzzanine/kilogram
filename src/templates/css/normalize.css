@@ -1,0 +1,61 @@
+/* Normalize.css */
+
+/* Contents of this file must be inlined to your newsletter in production */
+
+a {
+  /* Set sexy underline styling for links except images */
+  text-decoration: underline;
+  color: #2837b8 !important;
+}
+
+h1 {
+  /* Mail.ru <h1> styling fix */
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+}
+
+table {
+  /* Null tables spaces */
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 0;
+}
+
+table th {
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  /* Flexible images fix + prevent any borders for images */
+  max-width: 100%;
+  border: 0;
+  outline: 0;
+  /* Set image's ALT text styling */
+  color: #2837b8;
+  font-size: 14px;
+}
+
+ol, ul {
+  /* We don't touch horizontal margins to prevent hiding bullets in Oultook */
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+ol li, ul li {
+  line-height: 160%;
+  margin: 0.5em 0;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+}
+
+p {
+  line-height: 160%;
+  margin: 1em 0;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+}

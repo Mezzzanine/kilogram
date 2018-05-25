@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<style>
+		{% include './css/styles.css' %}
+		{% include './css/normalize.css' %}
+		{% include './css/custom.css' %}
+	</style>
+	<!--[if (gte mso 9)|(IE)]>
+	<style type="text/css">
+		table {border-collapse: collapse;}
+	</style>
+	<![endif]-->
+</head>
+
+<body>
+	<table width="100%" class="body">
+		<tr>
+			<td>
+				<center class="wrapper">
+					<div class="webkit">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="600" align="center">
+						<tr>
+						<td>
+						<![endif]-->
+						<table class="outer" align="center">
+							<row class="two-column hide">
+								<column>
+									<row class="preheader">
+										{{ page.preheader }}
+									</row>
+								</column>
+								<column>
+									<row class="preheader">
+										<a href="${Message.AccessibilityLink}">Открыть в браузере</a>
+									</row>
+								</column>
+							</row>
+							<row class="header">
+								<a href="#"><img src="https://sport-marafon.ru/mail/2018/04/logo.png" alt=""></a>
+							</row>
+							{% block content %}{% endblock %}
+							<row class="two-column footer">
+								<column>
+									<row>
+										Москва, <b>ул Сайкина, д. 4</b> м. Автозаводская
+									</row>
+								</column>
+								<column>
+									<row>
+										Ежедневно с 10:00 до 24:00 <b class="phone">8 (800) 333-14-41</b>
+									</row>
+								</column>
+							</row>
+							<row class="social">
+								<center>
+								<table>
+									<tr>
+										<td><a href=""><img src="https://sport-marafon.ru/mail/20161108/fb.png" /></a></td>
+										<td><a href=""><img src="https://sport-marafon.ru/mail/20161108/vk.png" /></a></td>
+										<td><a href=""><img src="https://sport-marafon.ru/mail/20161108/im.png" /></a></td>
+										<td><a href=""><img src="https://sport-marafon.ru/mail/20161108/yt.png" /></a></td>
+									</tr>
+								</table>
+							</center>
+							</row>
+							<row class="two-column footer">
+								<column>
+									<row>
+										<a href="#">Обратная связь</a> | <a href="#">Отписаться</a><br> © 2012 — 2018 Спорт-Марафон
+									</row>
+								</column>
+								<column>
+									<row>
+										Добавьте наш <a href="#">e-mail</a> в вашу адресную книгу, чтобы не упустить ничего важного
+									</row>
+								</column>
+							</row>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</div>
+				</center>
+		</tr>
+		</td>
+	</table>
+</body>
+
+</html>

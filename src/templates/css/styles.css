@@ -1,0 +1,199 @@
+body {
+  Margin: 0;
+  padding: 0;
+  min-width: 100%;
+  background-color: #ffffff
+}
+
+table {
+  border-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  color: #333333
+}
+
+td {
+  padding: 0
+}
+
+img {
+  border: 0
+}
+
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}
+
+.webkit {
+  max-width: 600px
+}
+
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px
+}
+
+.inner {
+  padding: 0 16px
+}
+
+.contents {
+  width: 100%;
+  font-size: 14px
+}
+
+.full-width-image img {
+  width: 100%;
+  height: auto
+}
+
+@-ms-viewport {
+  width: device-width
+}
+
+.one-column {
+  text-align: center;
+  font-size: 0
+}
+
+.one-column .column {
+  width: 100%;
+  max-width: 540px;
+  display: inline-block;
+  vertical-align: top
+}
+
+.one-column .contents {
+  text-align: left
+}
+
+.text {
+  line-height: 160%;
+}
+
+.one-column .text {
+  padding: 10px 0 0 0
+}
+
+.two-column {
+  text-align: center;
+  font-size: 0
+}
+
+.two-column .column {
+  width: 100%;
+  max-width: 270px;
+  display: inline-block;
+  vertical-align: top
+}
+
+.two-column .contents {
+  text-align: left
+}
+
+.two-column img {
+  width: 100%;
+  height: auto
+}
+
+.two-column .text {
+  padding: 10px 0
+}
+
+.three-column {
+  text-align: center;
+  font-size: 0;
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
+.three-column .column {
+  width: 100%;
+  max-width: 200px;
+  display: inline-block;
+  vertical-align: top
+}
+
+.three-column .contents {
+  text-align: center
+}
+
+.three-column img {
+  width: 100%;
+  height: auto
+}
+
+.three-column .text {
+  padding-top: 10px
+}
+
+.left-sidebar {
+  text-align: center;
+  font-size: 0
+}
+
+.left-sidebar .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle
+}
+
+.left-sidebar .left {
+  max-width: 100px
+}
+
+.left-sidebar .right {
+  max-width: 500px
+}
+
+.left-sidebar .contents {
+  text-align: center
+}
+
+.right-sidebar {
+  text-align: center;
+  font-size: 0
+}
+
+.right-sidebar .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle
+}
+
+.right-sidebar .left {
+  max-width: 100px
+}
+
+.right-sidebar .right {
+  max-width: 500px
+}
+
+.right-sidebar .contents {
+  text-align: center
+}
+
+@media screen and (max-width:400px) {
+  .two-column .column, .three-column .column {
+    max-width: 100% !important
+  }
+  .three-column img {
+    max-width: 50% !important
+  }
+}
+
+@media screen and (min-width:401px) and (max-width:620px) {
+  .three-column .column {
+    max-width: 33% !important
+  }
+  .two-column .column {
+    max-width: 50% !important
+  }
+}
+
+.phone {
+  white-space: nowrap
+}

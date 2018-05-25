@@ -1,0 +1,52 @@
+.body {
+  background-color: #EDEEEE;
+}
+
+.footer {
+  padding: 16px 0;
+}
+
+.header {
+  padding: 16px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.header img {
+  width: 269px;
+}
+
+.content {
+  background-color: #ffffff;
+  padding: 16px 0;
+}
+
+.preheader {
+  font-size: 12px;
+  text-align: center;
+  padding: 8px 0;
+}
+
+@media screen and (max-width: 400px) {
+  .hide {
+    display: none !important;
+  }
+}
+
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.social td {
+  padding: 0 16px;
+}
+
+.social img {
+  width: 32px;
+  height: 32px;
+}
+
+.social {
+  padding: 16px 0;
+}

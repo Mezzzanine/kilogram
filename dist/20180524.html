@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            Margin: 0;
+            padding: 0;
+            min-width: 100%;
+            background-color: #ffffff
+        }
+
+        table {
+            border-spacing: 0;
+            font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            color: #333333
+        }
+
+        td {
+            padding: 0
+        }
+
+        img {
+            border: 0
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%
+        }
+
+        .webkit {
+            max-width: 600px
+        }
+
+        .outer {
+            Margin: 0 auto;
+            width: 100%;
+            max-width: 600px
+        }
+
+        .inner {
+            padding: 0 16px
+        }
+
+        .contents {
+            width: 100%;
+            font-size: 14px
+        }
+
+        .full-width-image img {
+            width: 100%;
+            height: auto
+        }
+
+        @-ms-viewport {
+            width: device-width
+        }
+
+        .one-column {
+            text-align: center;
+            font-size: 0
+        }
+
+        .one-column .column {
+            width: 100%;
+            max-width: 540px;
+            display: inline-block;
+            vertical-align: top
+        }
+
+        .one-column .contents {
+            text-align: left
+        }
+
+        .text {
+            line-height: 160%;
+        }
+
+        .one-column .text {
+            padding: 10px 0 0 0
+        }
+
+        .two-column {
+            text-align: center;
+            font-size: 0
+        }
+
+        .two-column .column {
+            width: 100%;
+            max-width: 270px;
+            display: inline-block;
+            vertical-align: top
+        }
+
+        .two-column .contents {
+            text-align: left
+        }
+
+        .two-column img {
+            width: 100%;
+            height: auto
+        }
+
+        .two-column .text {
+            padding: 10px 0
+        }
+
+        .three-column {
+            text-align: center;
+            font-size: 0;
+            padding-top: 10px;
+            padding-bottom: 10px
+        }
+
+        .three-column .column {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top
+        }
+
+        .three-column .contents {
+            text-align: center
+        }
+
+        .three-column img {
+            width: 100%;
+            height: auto
+        }
+
+        .three-column .text {
+            padding-top: 10px
+        }
+
+        .left-sidebar {
+            text-align: center;
+            font-size: 0
+        }
+
+        .left-sidebar .column {
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .left-sidebar .left {
+            max-width: 100px
+        }
+
+        .left-sidebar .right {
+            max-width: 500px
+        }
+
+        .left-sidebar .contents {
+            text-align: center
+        }
+
+        .right-sidebar {
+            text-align: center;
+            font-size: 0
+        }
+
+        .right-sidebar .column {
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .right-sidebar .left {
+            max-width: 100px
+        }
+
+        .right-sidebar .right {
+            max-width: 500px
+        }
+
+        .right-sidebar .contents {
+            text-align: center
+        }
+
+        @media screen and (max-width:400px) {
+            .two-column .column,
+            .three-column .column {
+                max-width: 100% !important
+            }
+            .three-column img {
+                max-width: 50% !important
+            }
+        }
+
+        @media screen and (min-width:401px) and (max-width:620px) {
+            .three-column .column {
+                max-width: 33% !important
+            }
+            .two-column .column {
+                max-width: 50% !important
+            }
+        }
+
+        .phone {
+            white-space: nowrap
+        }
+
+        /* Normalize.css */
+
+        /* Contents of this file must be inlined to your newsletter in production */
+
+        a {
+            /* Set sexy underline styling for links except images */
+            text-decoration: underline;
+            color: #2837b8 !important;
+        }
+
+        h1 {
+            /* Mail.ru <h1> styling fix */
+            font-size: 2em;
+            font-weight: bold;
+            margin: 0.67em 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        table {
+            /* Null tables spaces */
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 0;
+        }
+
+        table th {
+            padding: 0;
+            font-weight: normal;
+        }
+
+        img {
+            /* Flexible images fix + prevent any borders for images */
+            max-width: 100%;
+            border: 0;
+            outline: 0;
+            /* Set image's ALT text styling */
+            color: #2837b8;
+            font-size: 14px;
+        }
+
+        ol,
+        ul {
+            /* We don't touch horizontal margins to prevent hiding bullets in Oultook */
+            margin-top: 1em;
+            margin-bottom: 2em;
+        }
+
+        ol li,
+        ul li {
+            line-height: 160%;
+            margin: 0.5em 0;
+            font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        p {
+            line-height: 160%;
+            margin: 1em 0;
+            font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .body {
+            background-color: #EDEEEE;
+        }
+
+        .footer {
+            padding: 16px 0;
+        }
+
+        .header {
+            padding: 16px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .header img {
+            width: 269px;
+        }
+
+        .content {
+            background-color: #ffffff;
+            padding: 16px 0;
+        }
+
+        .preheader {
+            font-size: 12px;
+            text-align: center;
+            padding: 8px 0;
+        }
+
+        @media screen and (max-width: 400px) {
+            .hide {
+                display: none !important;
+            }
+        }
+
+        .h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .social td {
+            padding: 0 16px;
+        }
+
+        .social img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .social {
+            padding: 16px 0;
+        }
+    </style>
+    <!--[if (gte mso 9)|(IE)]>
+	<style type="text/css">
+		table {border-collapse: collapse;}
+	</style>
+	<![endif]-->
+</head>
+
+<body style="Margin: 0; background-color: #ffffff; min-width: 100%; padding: 0;">
+    <table width="100%" class="body" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0" bgcolor="#EDEEEE">
+        <tr>
+            <td style="padding: 0;">
+                <center class="wrapper" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; table-layout: fixed; width: 100%;">
+                    <div class="webkit" style="max-width: 600px;">
+                        <!--[if (gte mso 9)|(IE)]>
+						<table width="600" align="center">
+						<tr>
+						<td>
+						<![endif]-->
+                        <table class="outer" align="center" style="Margin: 0 auto; border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; max-width: 600px;" border="0" cellpadding="0"
+                            cellspacing="0" width="100%">
+                            <tr>
+                                <td class="two-column hide" style="font-size: 0; padding: 0;" align="center">
+                                    <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="preheader" style="font-size: 12px; padding: 8px 0;" align="center">
+                                                                Лол кек чебурек
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="preheader" style="font-size: 12px; padding: 8px 0;" align="center">
+                                                                <a href="${Message.AccessibilityLink}" style="color: #2837b8 !important; text-decoration: underline;">Открыть в браузере</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="header" style="padding: 16px;" bgcolor="#ffffff" align="center">
+                                    <a href="#" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/04/logo.png" alt="" style="border: 0; color: #2837b8; font-size: 14px; max-width: 100%; outline: 0; width: 269px;" width="269"></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="full-width-image" style="padding: 0;">
+                                    <a href="#" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/03/20180322-hb.gif" alt="" style="border: 0; color: #2837b8; font-size: 14px; height: auto; max-width: 100%; outline: 0; width: 100%;"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="one-column content" style="font-size: 0; padding: 16px 0;" bgcolor="#ffffff" align="center">
+                                    <div class="column" style="display: inline-block; max-width: 540px; vertical-align: top; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="" style="padding: 0;">
+                                                                Content Here
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="full-width-image" style="padding: 0;">
+                                    <a href="#" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/03/20180322-bn1.jpg" style="border: 0; color: #2837b8; font-size: 14px; height: auto; max-width: 100%; outline: 0; width: 100%;"></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="two-column footer" style="font-size: 0; padding: 16px 0;" align="center">
+                                    <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="" style="padding: 0;">
+                                                                Москва, <b>ул Сайкина, д. 4</b> м. Автозаводская
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="" style="padding: 0;">
+                                                                Ежедневно с 10:00 до 24:00 <b class="phone" style="white-space: nowrap;">8 (800) 333-14-41</b>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="social" style="padding: 16px 0;">
+                                    <center>
+                                        <table style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td style="padding: 0 16px;"><a href="" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/fb.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
+                                                <td style="padding: 0 16px;"><a href="" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/vk.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
+                                                <td style="padding: 0 16px;"><a href="" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/im.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
+                                                <td style="padding: 0 16px;"><a href="" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/yt.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
+                                            </tr>
+                                        </table>
+                                    </center>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="two-column footer" style="font-size: 0; padding: 16px 0;" align="center">
+                                    <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="" style="padding: 0;">
+                                                                <a href="#" style="color: #2837b8 !important; text-decoration: underline;">Обратная связь</a> | <a href="#" style="color: #2837b8 !important; text-decoration: underline;">Отписаться</a><br> © 2012 — 2018 Спорт-Марафон
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="" style="padding: 0;">
+                                                                Добавьте наш <a href="#" style="color: #2837b8 !important; text-decoration: underline;">e-mail</a> в вашу
+                                                                адресную книгу, чтобы не упустить
+                                                                ничего важного
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+                    </div>
+                </center>
+            </td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
