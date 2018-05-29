@@ -58,14 +58,56 @@
 .menu a {
   font-size: 12px;
   text-decoration: none;
-  color: #000000 !important;
+  color: #000000;
 }
 
-.highlight {
-  color: #FF6900 !important;
+.menu a.highlight {
+  color: #FF6900;
 }
 
 .menu td {
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.items {
+  background-color: #ffffff;
+  padding: 16px 0;
+}
+
+.items img {
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+}
+
+.itemImage {
+  padding: 0 0 16px 0;
+}
+
+.itemTitle {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 0 8px 0;
+}
+
+.itemTitle a {
+  color: #000000;
+}
+
+.itemBrand {
+  padding: 0 0 8px 0;
+}
+
+.priceNew {
+  font-size: 18px;
+  color: #E01010;
+  padding: 0 0 32px 0;
+}
+
+.priceOld {
+  text-decoration: line-through;
+  color: #878787;
+  font-size: 12px;
+  line-height: 12px;
 }

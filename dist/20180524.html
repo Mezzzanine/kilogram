@@ -215,7 +215,7 @@
         a {
             /* Set sexy underline styling for links except images */
             text-decoration: underline;
-            color: #2837b8 !important;
+            color: #2837b8;
         }
 
         h1 {
@@ -332,16 +332,58 @@
         .menu a {
             font-size: 12px;
             text-decoration: none;
-            color: #000000 !important;
+            color: #000000;
         }
 
-        .highlight {
-            color: #FF6900 !important;
+        .menu a.highlight {
+            color: #FF6900;
         }
 
         .menu td {
             padding-left: 16px;
             padding-right: 16px;
+        }
+
+        .items {
+            background-color: #ffffff;
+            padding: 16px 0;
+        }
+
+        .items img {
+            width: 200px;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .itemImage {
+            padding: 0 0 16px 0;
+        }
+
+        .itemTitle {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0 0 8px 0;
+        }
+
+        .itemTitle a {
+            color: #000000;
+        }
+
+        .itemBrand {
+            padding: 0 0 8px 0;
+        }
+
+        .priceNew {
+            font-size: 18px;
+            color: #E01010;
+            padding: 0 0 32px 0;
+        }
+
+        .priceOld {
+            text-decoration: line-through;
+            color: #878787;
+            font-size: 12px;
+            line-height: 12px;
         }
     </style>
     <!--[if (gte mso 9)|(IE)]>
@@ -390,7 +432,7 @@
                                                         border="0" cellpadding="0" cellspacing="0">
                                                         <tr>
                                                             <td class="preheader" style="font-size: 12px; padding: 8px 0;" align="center">
-                                                                <a href="${Message.AccessibilityLink}" style="color: #2837b8 !important; text-decoration: underline;">Открыть в браузере</a>
+                                                                <a href="${Message.AccessibilityLink}" style="color: #2837b8; text-decoration: underline;">Открыть в браузере</a>
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -402,7 +444,7 @@
                             </tr>
                             <tr>
                                 <td class="logo" style="padding: 16px;" bgcolor="#ffffff" align="center">
-                                    <a href="https://sport-marafon.ru" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/04/logo.png" alt="" style="border: 0; color: #2837b8; font-size: 14px; max-width: 100%; outline: 0; width: 269px;" width="269"></a>
+                                    <a href="https://sport-marafon.ru" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/04/logo.png" alt="" style="border: 0; color: #2837b8; font-size: 14px; max-width: 100%; outline: 0; width: 269px;" width="269"></a>
                                 </td>
                             </tr>
                             <tr>
@@ -410,10 +452,10 @@
                                     <center>
                                         <table style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
                                             <tr>
-                                                <td style="padding: 0; padding-left: 16px; padding-right: 16px;"><a href="https://sport-marafon.ru/catalog/" target="_blank" style="color: #000000 !important; font-size: 12px; text-decoration: none;">Каталог</a></td>
-                                                <td style="padding: 0; padding-left: 16px; padding-right: 16px;"><a class="highlight" href="https://sport-marafon.ru/novie-postupleniya/" target="_blank" style="color: #FF6900 !important; font-size: 12px; text-decoration: none;">Новинки</a></td>
-                                                <td style="padding: 0; padding-left: 16px; padding-right: 16px;"><a href="https://sport-marafon.ru/magazin/" target="_blank" style="color: #000000 !important; font-size: 12px; text-decoration: none;">Магазин</a></td>
-                                                <td style="padding: 0; padding-left: 16px; padding-right: 16px;"><a href="https://sport-marafon.ru/contacts/" target="_blank" style="color: #000000 !important; font-size: 12px; text-decoration: none;">Контакты</a></td>
+                                                <td style="padding: 0; padding-left: 16px; padding-right: 16px;"><a href="https://sport-marafon.ru/catalog/" target="_blank" style="color: #000000; font-size: 12px; text-decoration: none;">Каталог</a></td>
+                                                <td style="padding: 0; padding-left: 16px; padding-right: 16px;"><a class="highlight" href="https://sport-marafon.ru/novie-postupleniya/" target="_blank" style="color: #FF6900; font-size: 12px; text-decoration: none;">Новинки</a></td>
+                                                <td style="padding: 0; padding-left: 16px; padding-right: 16px;"><a href="https://sport-marafon.ru/magazin/" target="_blank" style="color: #000000; font-size: 12px; text-decoration: none;">Магазин</a></td>
+                                                <td style="padding: 0; padding-left: 16px; padding-right: 16px;"><a href="https://sport-marafon.ru/contacts/" target="_blank" style="color: #000000; font-size: 12px; text-decoration: none;">Контакты</a></td>
                                             </tr>
                                         </table>
                                     </center>
@@ -422,7 +464,7 @@
 
                             <tr>
                                 <td class="full-width-image" style="padding: 0;">
-                                    <a href="#" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/03/20180322-hb.gif" alt="" style="border: 0; color: #2837b8; font-size: 14px; height: auto; max-width: 100%; outline: 0; width: 100%;"></a>
+                                    <a href="#" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/03/20180322-hb.gif" alt="" style="border: 0; color: #2837b8; font-size: 14px; height: auto; max-width: 100%; outline: 0; width: 100%;"></a>
                                 </td>
                             </tr>
                             <tr>
@@ -447,12 +489,17 @@
                             </tr>
                             <tr>
                                 <td class="full-width-image" style="padding: 0;">
-                                    <a href="#" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/03/20180322-bn1.jpg" style="border: 0; color: #2837b8; font-size: 14px; height: auto; max-width: 100%; outline: 0; width: 100%;"></a>
+                                    <a href="#" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/03/20180322-bn1.jpg" style="border: 0; color: #2837b8; font-size: 14px; height: auto; max-width: 100%; outline: 0; width: 100%;"></a>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td class="two-column footer" style="font-size: 0; padding: 16px 0;" align="center">
+                                    <!--[if (gte mso 9)|(IE)]>
+								<table width="100%">
+								<tr>
+								<td width="50%" valign="top">
+								<![endif]-->
                                     <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
                                         <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
                                             <tr>
@@ -469,6 +516,9 @@
                                             </tr>
                                         </table>
                                     </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+								</td><td width="50%" valign="top">
+								<![endif]-->
                                     <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
                                         <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
                                             <tr>
@@ -485,6 +535,11 @@
                                             </tr>
                                         </table>
                                     </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+								</td>
+								</tr>
+								</table>
+								<![endif]-->
                                 </td>
                             </tr>
                             <tr>
@@ -492,10 +547,10 @@
                                     <center>
                                         <table style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
                                             <tr>
-                                                <td style="padding: 0 16px;"><a href="https://www.facebook.com/Sportmarafon" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/fb.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
-                                                <td style="padding: 0 16px;"><a href="https://vk.com/club45599639" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/vk.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
-                                                <td style="padding: 0 16px;"><a href="https://instagram.com/sportmarafon/" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/im.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
-                                                <td style="padding: 0 16px;"><a href="https://www.youtube.com/channel/UC_aO4rIcQZGGt6Z62AwZ2Wg" style="color: #2837b8 !important; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/yt.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
+                                                <td style="padding: 0 16px;"><a href="https://www.facebook.com/Sportmarafon" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/fb.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
+                                                <td style="padding: 0 16px;"><a href="https://vk.com/club45599639" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/vk.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
+                                                <td style="padding: 0 16px;"><a href="https://instagram.com/sportmarafon/" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/im.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
+                                                <td style="padding: 0 16px;"><a href="https://www.youtube.com/channel/UC_aO4rIcQZGGt6Z62AwZ2Wg" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/20161108/yt.png" style="border: 0; color: #2837b8; font-size: 14px; height: 32px; max-width: 100%; outline: 0; width: 32px;" width="32"></a></td>
                                             </tr>
                                         </table>
                                     </center>
@@ -511,7 +566,7 @@
                                                         border="0" cellpadding="0" cellspacing="0">
                                                         <tr>
                                                             <td class="" style="padding: 0;">
-                                                                <a href="#" style="color: #2837b8 !important; text-decoration: underline;">Обратная связь</a> | <a href="#" style="color: #2837b8 !important; text-decoration: underline;">Отписаться</a><br> © 2012 — 2018 Спорт-Марафон
+                                                                <a href="#" style="color: #2837b8; text-decoration: underline;">Обратная связь</a> | <a href="#" style="color: #2837b8; text-decoration: underline;">Отписаться</a><br> © 2012 — 2018 Спорт-Марафон
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -527,7 +582,7 @@
                                                         border="0" cellpadding="0" cellspacing="0">
                                                         <tr>
                                                             <td class="" style="padding: 0;">
-                                                                Добавьте наш <a href="#" style="color: #2837b8 !important; text-decoration: underline;">e-mail</a> в вашу
+                                                                Добавьте наш <a href="#" style="color: #2837b8; text-decoration: underline;">e-mail</a> в вашу
                                                                 адресную книгу, чтобы не упустить
                                                                 ничего важного
                                                             </td>
