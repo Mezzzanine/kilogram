@@ -6,13 +6,13 @@
   padding: 16px 0;
 }
 
-.header {
+.logo {
   padding: 16px;
   text-align: center;
   background-color: #ffffff;
 }
 
-.header img {
+.logo img {
   width: 269px;
 }
 
@@ -49,4 +49,23 @@
 
 .social {
   padding: 16px 0;
+}
+
+.menu {
+  padding: 16px 0;
+}
+
+.menu a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #000000 !important;
+}
+
+.highlight {
+  color: #FF6900 !important;
+}
+
+.menu td {
+  padding-left: 16px;
+  padding-right: 16px;
 }
