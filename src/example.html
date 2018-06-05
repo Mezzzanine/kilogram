@@ -9,7 +9,7 @@ items:
     priceOld: "48 780"
     priceNew: "29 268"
     button:
-      text: "Посмотреть"
+      text: "ПОСМОТРЕТЬ"
       bgcolor: "#23AC5A"
       color: "#FFFFFF"
   - image: "https://sport-marafon.ru/mail/2018/02/20180228-it1.jpg"
@@ -19,7 +19,7 @@ items:
     priceOld: "48 780"
     priceNew: "29 268"
     button:
-      text: "Посмотреть"
+      text: "ПОСМОТРЕТЬ"
       bgcolor: "#23AC5A"
       color: "#FFFFFF"
   - image: "https://sport-marafon.ru/mail/2018/02/20180228-it1.jpg"
@@ -29,7 +29,7 @@ items:
     priceOld: "48 780"
     priceNew: "29 268"
     button:
-      text: "Посмотреть"
+      text: "ПОСМОТРЕТЬ"
       bgcolor: "#23AC5A"
       color: "#FFFFFF"
   - image: "https://sport-marafon.ru/mail/2018/02/20180228-it1.jpg"
@@ -39,7 +39,7 @@ items:
     priceOld: "48 780"
     priceNew: "29 268"
     button:
-      text: "Посмотреть"
+      text: "ПОСМОТРЕТЬ"
       bgcolor: "#23AC5A"
       color: "#FFFFFF"
 ---
@@ -60,6 +60,20 @@ items:
         <li>посетить</li>
         <li>посетить</li>
       </ul>
+    </row>
+    <row class="button content">
+      <center>
+      <div><!--[if mso]>
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" stroke="f" fillcolor="#23AC5A" style="height:40px;v-text-anchor:middle;width:220px;" >
+          <w:anchorlock/>
+          <center>
+        <![endif]-->
+            <a href="#" target="_blank" style="background-color:#23AC5A;color:#FFFFFF; display:inline-block; font-family:sans-serif;font-size:13px; font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:220px;-webkit-text-size-adjust:none;" >КУПИТЬ</a>
+        <!--[if mso]>
+          </center>
+        </v:rect>
+      <![endif]--></div>
+    </center>
     </row>
   </column>
 </row>
@@ -89,12 +103,25 @@ items:
     <row class="itemBrand">
       {{ item.brand }}
     </row>
+    {% if item.priceOld %}
     <row class="priceOld">
       {{ item.priceOld }} ₽
     </row>
+    {% endif %}
     <row class="priceNew">
       {{ item.priceNew }} ₽
-      {{ loop.index }}
+    </row>
+    <row class="itemButton">
+      <div><!--[if mso]>
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ item.href }}" target="_blank" stroke="f" fillcolor="{{ item.button.bgcolor }}" style="height:40px;v-text-anchor:middle;width:220px;" >
+          <w:anchorlock/>
+          <center>
+        <![endif]-->
+            <a href="{{ item.href }}" target="_blank" style="background-color:{{ item.button.bgcolor }};color:{{ item.button.color }}; display:inline-block; font-family:sans-serif;font-size:13px; font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:220px;-webkit-text-size-adjust:none;" >{{ item.button.text }}</a>
+        <!--[if mso]>
+          </center>
+        </v:rect>
+      <![endif]--></div>
     </row>
   </column>
   {% if (loop.index % 2 == 0 and loop.last != true) %}
