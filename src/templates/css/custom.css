@@ -114,3 +114,44 @@
 .itemButton {
   padding: 16px 0 32px 0;
 }
+
+.product-table{
+background: #ffffff;
+border-top: 1px solid #EDEEEE;
+border-bottom: 1px solid #EDEEEE;
+}
+.product-list{
+font-size: 12px;
+padding: 8px 0;
+}
+.product-list-img{
+width: 100%;
+max-width: 50px;
+max-height: 50px;
+padding: 8px 16px 8px 0;
+text-align: center;
+}
+.product-list-img img {
+max-width: 50px;
+max-height: 50px;
+}
+.product-list-name{
+text-align: left;
+width: 70%;
+padding: 0 16px 0 0;
+}
+.product-list-qty{
+text-align: center;
+width: 10%;
+padding: 0 16px;
+}
+.product-list-price{
+text-align: right;
+width: 20%;
+padding: 0 0 0 16px;
+}
+.product-list-sum{
+text-align: right;
+font-weight: bold;
+padding: 16px 0;
+}

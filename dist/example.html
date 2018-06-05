@@ -109,7 +109,7 @@
         }
 
         .two-column .text {
-            padding: 10px 0
+            padding: 16px 0
         }
 
         .three-column {
@@ -141,7 +141,8 @@
 
         .left-sidebar {
             text-align: center;
-            font-size: 0
+            font-size: 0;
+            background: #FFFFFF;
         }
 
         .left-sidebar .column {
@@ -151,19 +152,24 @@
         }
 
         .left-sidebar .left {
-            max-width: 100px
+            max-width: 140px;
+            background: #FFFFFF;
+            padding: 0 0 32px 0;
         }
 
         .left-sidebar .right {
-            max-width: 500px
+            max-width: 400px;
+            background: #FFFFFF;
+            padding: 0 0 32px 0;
         }
 
         .left-sidebar .contents {
-            text-align: center
+            text-align: left;
         }
 
         .right-sidebar {
             text-align: center;
+            background: #FFFFFF;
             font-size: 0
         }
 
@@ -174,15 +180,19 @@
         }
 
         .right-sidebar .left {
-            max-width: 100px
+            max-width: 140px;
+            background: #FFFFFF;
+            padding: 0 0 32px 0;
         }
 
         .right-sidebar .right {
-            max-width: 500px
+            max-width: 400px;
+            background: #FFFFFF;
+            padding: 0 0 32px 0;
         }
 
         .right-sidebar .contents {
-            text-align: center
+            text-align: left;
         }
 
         @media screen and (max-width:400px) {
@@ -192,6 +202,9 @@
             }
             .three-column img {
                 max-width: 50% !important
+            }
+            .items.two-column .column {
+                max-width: 270px !important
             }
         }
 
@@ -388,6 +401,54 @@
         .itemButton {
             padding: 16px 0 32px 0;
         }
+
+        .product-table {
+            background: #ffffff;
+            border-top: 1px solid #EDEEEE;
+            border-bottom: 1px solid #EDEEEE;
+        }
+
+        .product-list {
+            font-size: 12px;
+            padding: 8px 0;
+        }
+
+        .product-list-img {
+            width: 100%;
+            max-width: 50px;
+            max-height: 50px;
+            padding: 8px 16px 8px 0;
+            text-align: center;
+        }
+
+        .product-list-img img {
+            max-width: 50px;
+            max-height: 50px;
+        }
+
+        .product-list-name {
+            text-align: left;
+            width: 70%;
+            padding: 0 16px 0 0;
+        }
+
+        .product-list-qty {
+            text-align: center;
+            width: 10%;
+            padding: 0 16px;
+        }
+
+        .product-list-price {
+            text-align: right;
+            width: 20%;
+            padding: 0 0 0 16px;
+        }
+
+        .product-list-sum {
+            text-align: right;
+            font-weight: bold;
+            padding: 16px 0;
+        }
     </style>
     <!--[if (gte mso 9)|(IE)]>
 	<style type="text/css">
@@ -527,63 +588,77 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="two-column items" style="font-size: 0; padding: 16px 0;" bgcolor="#ffffff" align="center">
-
-                                    <!--[if (gte mso 9)|(IE)]>
-  <table width="100%">
+                                <td class="product-table" style="background: #ffffff; border-bottom: 1px solid #EDEEEE; border-top: 1px solid #EDEEEE; padding: 0;">
+                                    <div class="column">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="left-sidebar" style="background: #FFFFFF; font-size: 0; padding: 0;" align="center">
+                                                                <!--[if (gte mso 9)|(IE)]>
+  <table width="140">
   <tr>
   <td width="50%" valign="top">
   <![endif]-->
-
-                                    <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
-                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td class="inner" style="padding: 0 16px;">
-                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
-                                                        border="0" cellpadding="0" cellspacing="0">
-                                                        <tr>
-                                                            <td class="itemImage" style="padding: 0 0 16px 0;">
-                                                                <center>
-                                                                    <a href="#" target="_blank" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/02/20180228-it1.jpg" style="border: 0; color: #2837b8; font-size: 14px; height: auto; max-width: 100%; outline: 0; width: 200px;" width="200"></a>
-                                                                </center>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="itemTitle" style="font-size: 18px; font-weight: bold; padding: 0 0 8px 0;">
-                                                                <a href="#" target="_blank" style="color: #000000; text-decoration: underline;">Горные лыжи Super 7 HD</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="itemBrand" style="padding: 0 0 8px 0;">
-                                                                Rossignol
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td class="priceOld" style="color: #878787; font-size: 12px; line-height: 12px; padding: 0; text-decoration: line-through;">
-                                                                48 780 ₽
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td class="priceNew" style="color: #E01010; font-size: 18px; padding: 0;">
-                                                                29 268 ₽
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="itemButton" style="padding: 16px 0 32px 0;">
-                                                                <div>
-                                                                    <!--[if mso]>
-        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" stroke="f" fillcolor="#23AC5A" style="height:40px;v-text-anchor:middle;width:220px;" >
-          <w:anchorlock/>
-          <center>
-        <![endif]-->
-                                                                    <a href="#" target="_blank" style="-webkit-text-size-adjust: none; background-color: #23AC5A; color: #FFFFFF; display: inline-block; font-family: sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 220px;">ПОСМОТРЕТЬ</a>
-                                                                    <!--[if mso]>
-          </center>
-        </v:rect>
-      <![endif]-->
+                                                                <div class="column left" style="background: #FFFFFF; display: inline-block; max-width: 140px; padding: 0 0 32px 0; vertical-align: middle; width: 100%;">
+                                                                    <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0"
+                                                                        cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td class="inner" style="padding: 0 16px;">
+                                                                                <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                                                    border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td class="" style="padding: 0;">
+                                                                                            <table class="product-list" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 12px; padding: 8px 0;" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                    <td class="product-list-img" style="max-height: 50px; max-width: 50px; padding: 8px 16px 8px 0;" width="100%" align="center"><a href="#" target="_blank" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/upload/files/iblock/elements/93896884-7416-11e1-836f-e4115b353ec7/88e31675-0a24-11e7-80c6-901b0e95a2a8/88e316750a2411e780c6901b0e95a2a8_67a793290a3a11e780c6901b0e95a2a8.jpg" style="border: 0; color: #2837b8; font-size: 14px; max-height: 50px; max-width: 50px; outline: 0;"></a></td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
                                                                 </div>
+                                                                <!--[if (gte mso 9)|(IE)]>
+</td><td valign="top">
+<![endif]-->
+                                                                <div class="column right" style="background: #FFFFFF; display: inline-block; max-width: 400px; padding: 0 0 32px 0; vertical-align: middle; width: 100%;">
+                                                                    <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0"
+                                                                        cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td class="inner" style="padding: 0 16px;">
+                                                                                <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                                                    border="0" cellpadding="0" cellspacing="0">
+                                                                                    <tr>
+                                                                                        <td class="" style="padding: 0;">
+                                                                                            <table class="product-list" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 12px; padding: 8px 0;" border="0" cellpadding="0" cellspacing="0">
+                                                                                                <tr>
+                                                                                                    <td class="product-list-name" style="padding: 0 16px 0 0;" width="70%" align="left"><a href="#" target="_blank" style="color: #2837b8; text-decoration: underline;">Рюкзак Dunn 70+10 Black Рюкзак Dunn 70+10 Black Рюкзак Dunn 70+10 Black</a></td>
+                                                                                                    <td class="product-list-qty" style="padding: 0 16px;" width="10%" align="center">1</td>
+                                                                                                    <td class="product-list-price" style="padding: 0 0 0 16px;" width="20%" align="right">109300 ₽</td>
+                                                                                                </tr>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                                <!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="product-list-sum" style="font-weight: bold; padding: 16px 0;" align="right">
+                                                                Сумма заказа 1665654 ₽
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -591,83 +666,16 @@
                                             </tr>
                                         </table>
                                     </div>
-
-                                    <!--[if (gte mso 9)|(IE)]>
-  </td><td width="50%" valign="top">
-  <![endif]-->
-
-                                    <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
-                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                                <td class="inner" style="padding: 0 16px;">
-                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
-                                                        border="0" cellpadding="0" cellspacing="0">
-                                                        <tr>
-                                                            <td class="itemImage" style="padding: 0 0 16px 0;">
-                                                                <center>
-                                                                    <a href="#" target="_blank" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/02/20180228-it1.jpg" style="border: 0; color: #2837b8; font-size: 14px; height: auto; max-width: 100%; outline: 0; width: 200px;" width="200"></a>
-                                                                </center>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="itemTitle" style="font-size: 18px; font-weight: bold; padding: 0 0 8px 0;">
-                                                                <a href="#" target="_blank" style="color: #000000; text-decoration: underline;">Горные лыжи Super 7 HD</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="itemBrand" style="padding: 0 0 8px 0;">
-                                                                Rossignol
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td class="priceOld" style="color: #878787; font-size: 12px; line-height: 12px; padding: 0; text-decoration: line-through;">
-                                                                48 780 ₽
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <td class="priceNew" style="color: #E01010; font-size: 18px; padding: 0;">
-                                                                29 268 ₽
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="itemButton" style="padding: 16px 0 32px 0;">
-                                                                <div>
-                                                                    <!--[if mso]>
-        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" stroke="f" fillcolor="#23AC5A" style="height:40px;v-text-anchor:middle;width:220px;" >
-          <w:anchorlock/>
-          <center>
-        <![endif]-->
-                                                                    <a href="#" target="_blank" style="-webkit-text-size-adjust: none; background-color: #23AC5A; color: #FFFFFF; display: inline-block; font-family: sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 220px;">ПОСМОТРЕТЬ</a>
-                                                                    <!--[if mso]>
-          </center>
-        </v:rect>
-      <![endif]-->
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-
-                                    <!--[if (gte mso 9)|(IE)]>
-  </td>
-  </tr>
-  </table>
-  <![endif]-->
                                 </td>
                             </tr>
                             <tr>
                                 <td class="two-column items" style="font-size: 0; padding: 16px 0;" bgcolor="#ffffff" align="center">
 
                                     <!--[if (gte mso 9)|(IE)]>
-  <table width="100%">
-  <tr>
-  <td width="50%" valign="top">
-  <![endif]-->
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<![endif]-->
 
                                     <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
                                         <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
@@ -708,15 +716,15 @@
                                                             <td class="itemButton" style="padding: 16px 0 32px 0;">
                                                                 <div>
                                                                     <!--[if mso]>
-        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" stroke="f" fillcolor="#23AC5A" style="height:40px;v-text-anchor:middle;width:220px;" >
-          <w:anchorlock/>
-          <center>
-        <![endif]-->
+			<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" stroke="f" fillcolor="#23AC5A" style="height:40px;v-text-anchor:middle;width:220px;" >
+				<w:anchorlock/>
+				<center>
+			<![endif]-->
                                                                     <a href="#" target="_blank" style="-webkit-text-size-adjust: none; background-color: #23AC5A; color: #FFFFFF; display: inline-block; font-family: sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 220px;">ПОСМОТРЕТЬ</a>
                                                                     <!--[if mso]>
-          </center>
-        </v:rect>
-      <![endif]-->
+				</center>
+			</v:rect>
+		<![endif]-->
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -727,8 +735,8 @@
                                     </div>
 
                                     <!--[if (gte mso 9)|(IE)]>
-  </td><td width="50%" valign="top">
-  <![endif]-->
+</td><td width="50%" valign="top">
+<![endif]-->
 
                                     <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
                                         <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
@@ -769,15 +777,149 @@
                                                             <td class="itemButton" style="padding: 16px 0 32px 0;">
                                                                 <div>
                                                                     <!--[if mso]>
-        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" stroke="f" fillcolor="#23AC5A" style="height:40px;v-text-anchor:middle;width:220px;" >
-          <w:anchorlock/>
-          <center>
-        <![endif]-->
+			<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" stroke="f" fillcolor="#23AC5A" style="height:40px;v-text-anchor:middle;width:220px;" >
+				<w:anchorlock/>
+				<center>
+			<![endif]-->
                                                                     <a href="#" target="_blank" style="-webkit-text-size-adjust: none; background-color: #23AC5A; color: #FFFFFF; display: inline-block; font-family: sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 220px;">ПОСМОТРЕТЬ</a>
                                                                     <!--[if mso]>
-          </center>
-        </v:rect>
-      <![endif]-->
+				</center>
+			</v:rect>
+		<![endif]-->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="two-column items" style="font-size: 0; padding: 16px 0;" bgcolor="#ffffff" align="center">
+
+                                    <!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<![endif]-->
+
+                                    <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="itemImage" style="padding: 0 0 16px 0;">
+                                                                <center>
+                                                                    <a href="#" target="_blank" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/02/20180228-it1.jpg" style="border: 0; color: #2837b8; font-size: 14px; height: auto; max-width: 100%; outline: 0; width: 200px;" width="200"></a>
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="itemTitle" style="font-size: 18px; font-weight: bold; padding: 0 0 8px 0;">
+                                                                <a href="#" target="_blank" style="color: #000000; text-decoration: underline;">Горные лыжи Super 7 HD</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="itemBrand" style="padding: 0 0 8px 0;">
+                                                                Rossignol
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="priceOld" style="color: #878787; font-size: 12px; line-height: 12px; padding: 0; text-decoration: line-through;">
+                                                                48 780 ₽
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="priceNew" style="color: #E01010; font-size: 18px; padding: 0;">
+                                                                29 268 ₽
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="itemButton" style="padding: 16px 0 32px 0;">
+                                                                <div>
+                                                                    <!--[if mso]>
+			<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" stroke="f" fillcolor="#23AC5A" style="height:40px;v-text-anchor:middle;width:220px;" >
+				<w:anchorlock/>
+				<center>
+			<![endif]-->
+                                                                    <a href="#" target="_blank" style="-webkit-text-size-adjust: none; background-color: #23AC5A; color: #FFFFFF; display: inline-block; font-family: sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 220px;">ПОСМОТРЕТЬ</a>
+                                                                    <!--[if mso]>
+				</center>
+			</v:rect>
+		<![endif]-->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <!--[if (gte mso 9)|(IE)]>
+</td><td width="50%" valign="top">
+<![endif]-->
+
+                                    <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="itemImage" style="padding: 0 0 16px 0;">
+                                                                <center>
+                                                                    <a href="#" target="_blank" style="color: #2837b8; text-decoration: underline;"><img src="https://sport-marafon.ru/mail/2018/02/20180228-it1.jpg" style="border: 0; color: #2837b8; font-size: 14px; height: auto; max-width: 100%; outline: 0; width: 200px;" width="200"></a>
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="itemTitle" style="font-size: 18px; font-weight: bold; padding: 0 0 8px 0;">
+                                                                <a href="#" target="_blank" style="color: #000000; text-decoration: underline;">Горные лыжи Super 7 HD</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="itemBrand" style="padding: 0 0 8px 0;">
+                                                                Rossignol
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="priceOld" style="color: #878787; font-size: 12px; line-height: 12px; padding: 0; text-decoration: line-through;">
+                                                                48 780 ₽
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="priceNew" style="color: #E01010; font-size: 18px; padding: 0;">
+                                                                29 268 ₽
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="itemButton" style="padding: 16px 0 32px 0;">
+                                                                <div>
+                                                                    <!--[if mso]>
+			<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" target="_blank" stroke="f" fillcolor="#23AC5A" style="height:40px;v-text-anchor:middle;width:220px;" >
+				<w:anchorlock/>
+				<center>
+			<![endif]-->
+                                                                    <a href="#" target="_blank" style="-webkit-text-size-adjust: none; background-color: #23AC5A; color: #FFFFFF; display: inline-block; font-family: sans-serif; font-size: 13px; font-weight: bold; line-height: 40px; text-align: center; text-decoration: none; width: 220px;">ПОСМОТРЕТЬ</a>
+                                                                    <!--[if mso]>
+				</center>
+			</v:rect>
+		<![endif]-->
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -791,6 +933,11 @@
                             </tr>
                             <tr>
                                 <td class="two-column content" style="font-size: 0; padding: 16px 0;" bgcolor="#ffffff" align="center">
+                                    <!--[if (gte mso 9)|(IE)]>
+  <table width="100%">
+  <tr>
+  <td width="50%" valign="top">
+  <![endif]-->
                                     <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
                                         <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
                                             <tr>
@@ -803,7 +950,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="text" style="line-height: 160%; padding: 10px 0;">
+                                                            <td class="text" style="line-height: 160%; padding: 16px 0;">
                                                                 Мы знаем, что среди наших клиентов есть люди,
                                                                 которым есть, что рассказать. Если
                                                                 вы один из них, пожалуйста, напишите
@@ -817,6 +964,9 @@
                                             </tr>
                                         </table>
                                     </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+  </td><td width="50%" valign="top">
+  <![endif]-->
                                     <div class="column" style="display: inline-block; max-width: 270px; vertical-align: top; width: 100%;">
                                         <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
                                             <tr>
@@ -829,7 +979,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="text" style="line-height: 160%; padding: 10px 0;">
+                                                            <td class="text" style="line-height: 160%; padding: 16px 0;">
                                                                 Если вас интересует какая-либо тема, которую
                                                                 вы хотели бы раскрыть для себя,
                                                                 <a
@@ -843,6 +993,119 @@
                                             </tr>
                                         </table>
                                     </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+  </td>
+  </tr>
+  </table>
+  <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left-sidebar" style="background: #FFFFFF; font-size: 0; padding: 0;" align="center">
+                                    <!--[if (gte mso 9)|(IE)]>
+  <table width="140">
+  <tr>
+  <td width="50%" valign="top">
+  <![endif]-->
+                                    <div class="column left" style="background: #FFFFFF; display: inline-block; max-width: 140px; padding: 0 0 32px 0; vertical-align: middle; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="text" style="line-height: 160%; padding: 0;">
+                                                                <img src="https://sport-marafon.ru/mail/20170601/20170601-km.png" style="border: 0; color: #2837b8; font-size: 14px; max-width: 100%; outline: 0;">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+</td><td valign="top">
+<![endif]-->
+                                    <div class="column right" style="background: #FFFFFF; display: inline-block; max-width: 400px; padding: 0 0 32px 0; vertical-align: middle; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="text" style="line-height: 160%; padding: 0;">
+                                                                Мы знаем, что среди наших клиентов есть люди,
+                                                                которым есть, что рассказать. Если
+                                                                вы один из них, пожалуйста, напишите
+                                                                нам! Мы готовы предоставить вам
+                                                                площадку и помочь в организации
+                                                                мероприятия.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td dir="rtl" class="right-sidebar" style="background: #FFFFFF; font-size: 0; padding: 0;" align="center">
+                                    <!--[if (gte mso 9)|(IE)]>
+  <table width="100%">
+  <tr>
+  <td width="140" valign="top">
+  <![endif]-->
+                                    <div dir="ltr" class="column left" style="background: #FFFFFF; display: inline-block; max-width: 140px; padding: 0 0 32px 0; vertical-align: middle; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="text" style="line-height: 160%; padding: 0;">
+                                                                <img src="https://sport-marafon.ru/mail/20170601/20170601-km.png" style="border: 0; color: #2837b8; font-size: 14px; max-width: 100%; outline: 0;">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+</td><td valign="top">
+<![endif]-->
+                                    <div dir="ltr" class="column right" style="background: #FFFFFF; display: inline-block; max-width: 400px; padding: 0 0 32px 0; vertical-align: middle; width: 100%;">
+                                        <table width="100%" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="inner" style="padding: 0 16px;">
+                                                    <table width="100%" class="contents" style="border-collapse: collapse; border-spacing: 0; color: #333333; font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif; font-size: 14px; text-align: left;"
+                                                        border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="text" style="line-height: 160%; padding: 0;">
+                                                                Мы знаем, что среди наших клиентов есть люди,
+                                                                которым есть, что рассказать. Если
+                                                                вы один из них, пожалуйста, напишите
+                                                                нам! Мы готовы предоставить вам
+                                                                площадку и помочь в организации
+                                                                мероприятия.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
                                 </td>
                             </tr>
                             <tr>

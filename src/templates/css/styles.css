@@ -100,7 +100,7 @@ img {
 }
 
 .two-column .text {
-  padding: 10px 0
+  padding: 16px 0
 }
 
 .three-column {
@@ -132,7 +132,8 @@ img {
 
 .left-sidebar {
   text-align: center;
-  font-size: 0
+  font-size: 0;
+  background: #FFFFFF;
 }
 
 .left-sidebar .column {
@@ -142,19 +143,24 @@ img {
 }
 
 .left-sidebar .left {
-  max-width: 100px
+  max-width: 140px;
+  background: #FFFFFF;
+  padding: 0 0 32px 0;
 }
 
 .left-sidebar .right {
-  max-width: 500px
+  max-width: 400px;
+  background: #FFFFFF;
+  padding: 0 0 32px 0;
 }
 
 .left-sidebar .contents {
-  text-align: center
+  text-align: left;
 }
 
 .right-sidebar {
   text-align: center;
+  background: #FFFFFF;
   font-size: 0
 }
 
@@ -165,15 +171,19 @@ img {
 }
 
 .right-sidebar .left {
-  max-width: 100px
+  max-width: 140px;
+  background: #FFFFFF;
+  padding: 0 0 32px 0;
 }
 
 .right-sidebar .right {
-  max-width: 500px
+  max-width: 400px;
+  background: #FFFFFF;
+  padding: 0 0 32px 0;
 }
 
 .right-sidebar .contents {
-  text-align: center
+  text-align: left;
 }
 
 @media screen and (max-width:400px) {
@@ -182,6 +192,9 @@ img {
   }
   .three-column img {
     max-width: 50% !important
+  }
+  .items.two-column .column {
+    max-width: 270px !important
   }
 }
 
