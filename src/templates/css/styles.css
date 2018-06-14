@@ -47,7 +47,16 @@ img {
 
 .full-width-image img {
   width: 100%;
-  height: auto
+  height: auto;
+  padding: 0 0 32px 0;
+  background: #FFFFFF;
+  display: block;
+}
+.hb img {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  display: block;
 }
 
 @-ms-viewport {
@@ -146,6 +155,7 @@ img {
   max-width: 140px;
   background: #FFFFFF;
   padding: 0 0 32px 0;
+  vertical-align: top;
 }
 
 .left-sidebar .right {
