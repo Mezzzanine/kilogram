@@ -48,7 +48,7 @@ img {
 .full-width-image img {
   width: 100%;
   height: auto;
-  padding: 0 0 32px 0;
+  padding: 0 0 16px 0;
   background: #FFFFFF;
   display: block;
 }
@@ -208,7 +208,7 @@ img {
   }
 }
 
-@media screen and (min-width:401px) and (max-width:620px) {
+@media screen and (min-width:415px) and (max-width:620px) {
   .three-column .column {
     max-width: 33% !important
   }
