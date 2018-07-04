@@ -36,7 +36,10 @@ gulp.task('build', function () {
       applyTableAttributes: true,
       removeHtmlSelectors: false
     }))
-    .pipe(beautify())
+    .pipe(htmlmin({
+        minifyCSS: true,
+        collapseWhitespace: true
+     }))
     .pipe(typograf({
       locale: ['ru']
     }))
