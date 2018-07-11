@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<style>
+		{% include './css/styles.css' %}
+		{% include './css/normalize.css' %}
+		{% include './css/custom-pumari.css' %}
+	</style>
+	<!--[if (gte mso 9)|(IE)]>
+	<style type="text/css">
+		table {border-collapse: collapse;}
+	</style>
+	<![endif]-->
+</head>
+
+<body>
+	<table width="100%" class="body">
+		<tr>
+			<td>
+				<center class="wrapper">
+					<div class="webkit">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="600" align="center">
+						<tr>
+						<td>
+						<![endif]-->
+						<table class="outer" align="center">
+							<row class="two-column hide">
+								<column>
+									<row class="preheader">
+										{{ page.preheader }}
+									</row>
+								</column>
+								<column>
+									<row class="preheader">
+										<a href="${Message.AccessibilityLink}">Открыть в браузере</a>
+									</row>
+
+								</column>
+							</row>
+							{% block content %}{% endblock %}
+							<row class="two-column footer">
+								<column>
+									<row>
+										<a href="mailto:pro@sport-marafon.ru">Обратная связь</a> | <a href="${Message.UnsubscribeLink}">Отписаться</a>
+									</row>
+								</column>
+								<column>
+									<row>
+									© 2012 — 2018 Спорт-Марафон
+									</row>
+								</column>
+							</row>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</div>
+				</center>
+		</tr>
+		</td>
+	</table>
+</body>
+
+</html>

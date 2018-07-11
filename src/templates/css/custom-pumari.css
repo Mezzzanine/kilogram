@@ -1,0 +1,92 @@
+.body {
+  background-color: #233189;
+}
+
+.footer {
+  padding: 16px 0;
+}
+
+.logo {
+  padding: 16px;
+  text-align: center;
+  background-color: #233189;
+}
+
+.logo img {
+  width: 269px;
+}
+
+.content {
+  background-color: #233189;
+  padding: 16px 0;
+}
+
+.preheader {
+  font-size: 12px;
+  text-align: center;
+  padding: 8px 0;
+}
+
+@media screen and (max-width: 400px) {
+  .hide {
+    display: none !important;
+  }
+}
+
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.social td {
+  padding: 0 16px;
+}
+
+.social img {
+  width: 32px;
+  height: 32px;
+}
+
+.social {
+  padding: 16px 0;
+}
+
+.menu {
+  padding: 16px 0;
+}
+
+.menu a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu a.highlight {
+  color: #FF6900;
+}
+
+.menu td {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.alert{
+  border-left: 5px solid #4F4AC0;
+}
+table {
+  border-spacing: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  color: #FFFFFF
+}
+a {
+  text-decoration: underline;
+  color: #C1D400;
+}
+
+.full-width-image a img{
+  background: #233189;
+}
+
+.full-width-image img{
+  padding-top: 25px;
+}
