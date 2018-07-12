@@ -1,5 +1,5 @@
 .body {
-  background-color: #233189;
+  background-color: #0B1C48;
 }
 
 .footer {
@@ -9,7 +9,7 @@
 .logo {
   padding: 16px;
   text-align: center;
-  background-color: #233189;
+  background-color: #0B1C48;
 }
 
 .logo img {
@@ -17,7 +17,7 @@
 }
 
 .content {
-  background-color: #233189;
+  background-color: #0B1C48;
   padding: 16px 0;
 }
 
@@ -84,7 +84,7 @@ a {
 }
 
 .full-width-image a img{
-  background: #233189;
+  background: #0B1C48;
 }
 
 .full-width-image img{
