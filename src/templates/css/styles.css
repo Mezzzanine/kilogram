@@ -45,12 +45,19 @@ img {
   font-size: 14px
 }
 
+.full-width-image{
+  background: #FFFFFF;
+  display: block;
+  padding: 0 0 16px 0;
+}
+.full-width-image-last{
+  background: #FFFFFF;
+  display: block;
+}
+
 .full-width-image img {
   width: 100%;
   height: auto;
-  padding: 0 0 16px 0;
-  background: #FFFFFF;
-  display: block;
 }
 .hb img {
   width: 100%;
@@ -83,9 +90,6 @@ img {
   line-height: 160%;
 }
 
-.one-column .text {
-  padding: 10px 0 0 0
-}
 
 .two-column {
   text-align: center;
