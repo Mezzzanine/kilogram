@@ -156,14 +156,14 @@ img {
 }
 
 .left-sidebar .left {
-  max-width: 140px;
+  max-width: 200px;
   background: #FFFFFF;
   padding: 0 0 32px 0;
   vertical-align: top;
 }
 
 .left-sidebar .right {
-  max-width: 400px;
+  max-width: 340px;
   background: #FFFFFF;
   padding: 0 0 32px 0;
 }
@@ -185,13 +185,13 @@ img {
 }
 
 .right-sidebar .left {
-  max-width: 140px;
+  max-width: 200px;
   background: #FFFFFF;
   padding: 0 0 32px 0;
 }
 
 .right-sidebar .right {
-  max-width: 400px;
+  max-width: 340px;
   background: #FFFFFF;
   padding: 0 0 32px 0;
 }
