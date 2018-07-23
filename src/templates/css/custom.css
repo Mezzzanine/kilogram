@@ -25,6 +25,7 @@
   font-size: 12px;
   text-align: center;
   padding: 8px 0;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 400px) {
@@ -52,7 +53,7 @@
 }
 
 .menu {
-  padding: 16px 0;
+  padding: 12px 0;
 }
 
 .menu a {

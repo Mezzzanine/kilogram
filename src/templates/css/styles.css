@@ -66,6 +66,17 @@ img {
   display: block;
 }
 
+.half-width-image {
+  background: #FFFFFF;
+  display: block;
+  padding: 0 0 32px 0;
+  max-width: 238px;
+  text-align: center;
+}
+.half-width-image img {
+  align: center;
+}
+
 @-ms-viewport {
   width: device-width
 }
@@ -200,7 +211,7 @@ img {
   text-align: left;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:415px) {
   .two-column .column, .three-column .column {
     max-width: 100% !important
   }
