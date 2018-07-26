@@ -3,7 +3,12 @@
 }
 
 .footer {
-  padding: 16px 0;
+  padding: 32px 0 8px 0;
+  font-size: 12px;
+}
+.footer2 {
+  padding: 8px 0 32px 0;
+  font-size: 12px;
 }
 
 .logo {
@@ -25,7 +30,6 @@
   font-size: 12px;
   text-align: center;
   padding: 8px 0;
-  white-space: nowrap;
 }
 
 @media screen and (max-width: 400px) {
@@ -89,7 +93,9 @@
 .itemTitle {
   font-size: 18px;
   font-weight: bold;
-  padding: 0 0 8px 0;
+  padding: 0 0 8px 10px;
+  height: 70px;
+  vertical-align: top;
 }
 
 .itemTitle a {
@@ -97,12 +103,13 @@
 }
 
 .itemBrand {
-  padding: 0 0 8px 0;
+  padding: 0 0 8px 10px;
 }
 
 .priceNew {
   font-size: 18px;
   color: #E01010;
+  padding: 0 0 0 10px;
 }
 
 .priceOld {
@@ -110,6 +117,7 @@
   color: #878787;
   font-size: 12px;
   line-height: 12px;
+  padding: 0 0 0 10px;
 }
 
 .itemButton {

@@ -33,6 +33,7 @@
 		{{ item.priceNew }} ₽
 	</row>
 	<row class="itemButton">
+	<center>
 		<div><!--[if mso]>
 			<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ item.href }}" target="_blank" stroke="f" fillcolor="{{ item.button.bgcolor }}" style="height:40px;v-text-anchor:middle;width:220px;" >
 				<w:anchorlock/>
@@ -43,6 +44,7 @@
 				</center>
 			</v:rect>
 		<![endif]--></div>
+		</center>
 	</row>
 </column>
 {% if (loop.index % 2 == 0 and loop.last != true) %}
@@ -152,7 +154,7 @@
 								</table>
 							</center>
 							</row>
-							<row class="two-column footer">
+							<row class="two-column footer2">
 								<column>
 									<row>
 										<a href="mailto:pro@sport-marafon.ru">Обратная связь</a> | <a href="${Message.UnsubscribeLink}">Отписаться</a><br> © 2012 — 2018 Спорт-Марафон
