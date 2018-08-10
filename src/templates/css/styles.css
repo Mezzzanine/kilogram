@@ -185,6 +185,19 @@ img {
   padding: 0 0 32px 0;
 }
 
+.product-table .left-sidebar .left {
+  max-width: 100px;
+  background: #FFFFFF;
+  padding: 0 0 32px 0;
+  vertical-align: top;
+}
+
+.product-table .left-sidebar .right {
+  max-width: 440px;
+  background: #FFFFFF;
+  padding: 0 0 32px 0;
+}
+
 .left-sidebar .contents {
   text-align: left;
 }
