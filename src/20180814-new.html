@@ -1,0 +1,45 @@
+---
+layout: default
+preheader: "Спасибо, что выбрали Спорт-Марафон"
+---
+<row class="one-column content">
+  <column>
+    <row>
+      <h1>@{ if IsEmpty(Recipient.OnlyStandardFirstName) }Здравствуйте!
+      @{ else }Здравствуйте, ${Recipient.OnlyStandardFirstName}!
+      @{ end if}
+      </h1>
+    <p>Спасибо за ваш заказ в интернет-магазине “Спорт-Марафон”.</p>
+    <p>Заказ №${Order.WebsiteExternalId} был сформирован ${Order.Date}.</p>
+    </row>
+    <row class="product-table">
+      <column>
+        @{ for purchase in Order.Purchases }
+        <row>
+          <table class="product-list">
+            <tr>
+              <td class="product-number">1.</td>
+              <td class="product-list-img hide"><a href="${purchase.Product.Url}" target="_blank"><img src="${purchase.Product.PictureUrl}" alt="${purchase.Product.DisplayName}"/></a>
+              </td>
+                <td class="product-list-name"><a href="${purchase.Product.Url}" target="_blank">${purchase.Product.DisplayName}</a></td>
+                <td class="product-list-qty">${ purchase.Count }</td>
+                <td class="product-list-price"><span class="priceNew">${ purchase.Cost | formatDecimal("0")} &#8381;</span><br />@{ if Product.OldPrice ! = null }
+
+<span class="priceOld">${formatDecimal(Product.OldPrice, 'N0')} &#8381;</span>@ {else} @{end if}</td>
+            </tr>
+          </table>
+        </row>
+        @{end for}
+    <row class="product-list-sum">
+    Сумма заказа: ${Order.PriceAfterDiscount | formatDecimal("0")} &#8381;
+    </row>
+    </column>
+    </row>
+    <row>
+      <p>Вы можете следить за актуальным статусом своего заказа в Личном кабинете на сайте “Спорт-Марафон”.</p>
+      <p>Чтобы аннулировать заказ, воспользуйтесь функцией отмены заказа, которая доступна в Личном кабинете или по телефону: 8 (800) 333-14-41. При обращении к менеджерам интернет-магазина ОБЯЗАТЕЛЬНО указывайте номер вашего заказа №{Order.WebsiteExternalId}.</p>
+      <p>С уважением,<br>
+      Команда “Спорт-Марафон”</p>
+    </row>
+    </column>
+</row>

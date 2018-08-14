@@ -10,6 +10,13 @@
   padding: 8px 0 32px 0;
   font-size: 12px;
 }
+.footer3 {
+  padding: 0 28px;
+  font-size: 10px;
+  }
+.footer3 p {
+  color: #cccccc;
+}
 
 .logo {
   padding: 16px;
@@ -115,6 +122,7 @@
 .product-list-price .priceNew {
   color: #23AC5A;
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .priceOld {
