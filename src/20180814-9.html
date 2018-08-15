@@ -1,0 +1,21 @@
+---
+layout: default
+preheader: "Но мы надеемся, что наша дружба все так же крепка ;)"
+---
+<row class="one-column content">
+  <column>
+    <row>
+      <h1>@{ if IsEmpty(Recipient.OnlyStandardFirstName) }Здравствуйте!
+      @{ else }Здравствуйте, ${Recipient.OnlyStandardFirstName}!
+      @{ end if}
+      </h1>
+
+      <p>Мы сожалеем, что ваш заказ №${Order.WebsiteExternalId} от ${Order.Date} был отменён.</p>
+      <p>Мы прикладываем все усилия для того, чтобы наш сервис отвечал вашим ожиданиям, поэтому будем благодарны, если вы напишите отзыв о нашей работе и отправите его директору интернет-магазина Алексею Калашникову (<a href='mailto:a.kalashnikov@sport-marafon.ru' target='_blank'>a.kalashnikov@sport-marafon.ru</a>).</p>
+      <p>Оставайтесь с нами и следите за новостями и акциями на нашем <a href='https://sport-marafon.ru/' target='_blank'>сайте</a>. </p>
+      <p>Чтобы получить дополнительную информацию по любым вопросам, обратитесь в наш Контакт-центр по телефону: 8 (800) 333-14-41 или в чате на сайте.</p>
+      <p>С уважением,<br>
+      Команда “Спорт-Марафон”</p>
+    </row>
+    </column>
+</row>
