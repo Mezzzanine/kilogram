@@ -1,4 +1,8 @@
-{% macro products() %}
+{% macro products(ids, items) %}
+{% for id in ids %}
+{{ items[id].title… }}
+{% endfor %}
+
 {% for item in page.items %}
 {% if loop.index % 2 != 0 %}
 <!--[if (gte mso 9)|(IE)]>
@@ -24,13 +28,12 @@
 	<row class="itemBrand">
 		{{ item.brand }}
 	</row>
-	{% if item.priceOld %}
-	<row class="priceOld">
-		{{ item.priceOld }} ₽
-	</row>
-	{% endif %}
 	<row class="priceNew">
-		{{ item.priceNew }} ₽
+		{{ item.priceNew }} ₽ {% if item.priceOld %}
+		<span class="priceOld">
+			{{ item.priceOld }} ₽
+		</span>
+		{% endif %}
 	</row>
 	<row class="itemButton">
 	<center>
