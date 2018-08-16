@@ -1,8 +1,4 @@
-{% macro products(ids, items) %}
-{% for id in ids %}
-{{ items[id].title… }}
-{% endfor %}
-
+{% macro products() %}
 {% for item in page.items %}
 {% if loop.index % 2 != 0 %}
 <!--[if (gte mso 9)|(IE)]>
