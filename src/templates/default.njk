@@ -1,5 +1,5 @@
-{% macro products() %}
-{% for item in page.items %}
+{% macro products(ids) %}
+{% for id in ids %}
 {% if loop.index % 2 != 0 %}
 <!--[if (gte mso 9)|(IE)]>
 <table width="100%">
@@ -15,30 +15,30 @@
 <column>
 	<row class="itemImage">
 		<center>
-			<a href="{{ item.href }}" target="_blank"><img src="{{ item.image }}"></a>
+			<a href="{{ products[id].href }}" target="_blank"><img src="{{ products[id].image }}"></a>
 		</center>
 	</row>
 	<row class="itemTitle">
-		<a href="{{ item.href }}" target="_blank">{{ item.title }}</a>
+		<a href="{{ products[id].href }}" target="_blank">{{ products[id].title }}</a>
 	</row>
 	<row class="itemBrand">
-		{{ item.brand }}
+		{{ products[id].brand }}
 	</row>
 	<row class="priceNew">
-		{{ item.priceNew }} ₽ {% if item.priceOld %}
+		{{ products[id].priceNew }} ₽ {% if products[id].priceOld %}
 		<span class="priceOld">
-			{{ item.priceOld }} ₽
+			{{ products[id].priceOld }} ₽
 		</span>
 		{% endif %}
 	</row>
 	<row class="itemButton">
 	<center>
 		<div><!--[if mso]>
-			<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ item.href }}" target="_blank" stroke="f" fillcolor="{{ item.button.bgcolor }}" style="height:40px;v-text-anchor:middle;width:220px;" >
+			<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ products[id].href }}" target="_blank" stroke="f" fillcolor="{{ products[id].button.bgcolor }}" style="height:40px;v-text-anchor:middle;width:220px;" >
 				<w:anchorlock/>
 				<center>
 			<![endif]-->
-					<a href="{{ item.href }}" target="_blank" style="background-color:{{ item.button.bgcolor }};color:{{ item.button.color }}; display:inline-block; font-family:sans-serif;font-size:13px; font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:220px;-webkit-text-size-adjust:none;" >{{ item.button.text }}</a>
+					<a href="{{ products[id].href }}" target="_blank" style="background-color:{{ products[id].button.bgcolor }};color:{{ item.button.color }}; display:inline-block; font-family:sans-serif;font-size:13px; font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:220px;-webkit-text-size-adjust:none;" >{{ products[id].button.text }}</a>
 			<!--[if mso]>
 				</center>
 			</v:rect>
