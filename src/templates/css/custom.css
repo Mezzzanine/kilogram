@@ -71,6 +71,7 @@
   font-size: 12px;
   text-decoration: none;
   color: #000000;
+  white-space: nowrap;
 }
 
 .menu a.highlight {
