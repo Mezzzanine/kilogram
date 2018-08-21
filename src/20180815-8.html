@@ -1,0 +1,19 @@
+---
+layout: default
+preheader: "Ваш заказ зарезервирован на 24 часа"
+---
+<row class="one-column content">
+  <column>
+    <row>
+      <h1>@{ if IsEmpty(Recipient.OnlyStandardFirstName) }Здравствуйте!
+      @{ else }Здравствуйте, ${Recipient.OnlyStandardFirstName}!
+      @{ end if}
+      </h1>
+      <p>Мы не смогли связаться с вами по телефону №$@{ if IsEmpty(Recipient.MobilePhone) }@{ else }${ Recipient.MobilePhone }@{ end if } по вашему заказу №${Order.WebsiteExternalId} от ${Order.Date}.</p>
+      <p>Просим позвонить нам по: 8 (800) 333-14-41 (бесплатно по РФ) или написать на manager@sport-marafon.ru для возобновления вашего заказа. При обращении к менеджерам интернет-магазина ОБЯЗАТЕЛЬНО указывайте номер заказа №{Order.WebsiteExternalId}.</p>
+      <p>Товары зарезервированы за вами на 24 часа, но обратите внимание, что после истечения срока резерва, заказ будет автоматически расформирован.</p>
+      <p>С уважением,<br>
+      Команда “Спорт-Марафон”</p>
+    </row>
+    </column>
+</row>

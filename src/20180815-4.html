@@ -1,0 +1,80 @@
++---
+layout: default
+preheader: "Заказ готов к выдаче"
+---
+<row class="one-column content">
+  <column>
+    <row>
+      <h1>@{ if IsEmpty(Recipient.OnlyStandardFirstName) }Здравствуйте!
+      @{ else }Здравствуйте, ${Recipient.OnlyStandardFirstName}!
+      @{ end if}
+      </h1>
+    <p>Ваш заказ №{Order.WebsiteExternalId} укомплектован и готов к выдаче. Заказ действителен к выдаче в течение 24 часов.
+</p>
+<p>Обращаем ваше внимание, что самовывоз осуществляется ежедневно с 10:00 до 22:00 по адресу: г. Москва, ул. Сайкина д.4.</p>
+<p>
+  В магазине вам необходимо обратиться на кассу и назвать номер заказа №{Order.WebsiteExternalId}.
+</p>
+    </row>
+    <row class="product-table">
+      <column>
+        @{ for purchase in Order.Purchases }
+        <row>
+          <table class="product-list">
+            <tr>
+              <td class="product-number">1.</td>
+              <td class="product-list-img hide"><a href="${purchase.Product.Url}" target="_blank"><img src="${purchase.Product.PictureUrl}" alt="${purchase.Product.DisplayName}"/></a>
+              </td>
+                <td class="product-list-name"><a href="${purchase.Product.Url}" target="_blank">${purchase.Product.DisplayName}</a></td>
+                <td class="product-list-qty">${ purchase.Count }</td>
+                <td class="product-list-price"><span class="priceNew">${ purchase.Cost | formatDecimal("0")} &#8381;</span><br />@{ if Product.OldPrice ! = null }
+<span class="priceOld">${formatDecimal(Product.OldPrice, 'N0')} &#8381;</span>@ {else} @{end if}</td>
+            </tr>
+          </table>
+        </row>
+        @{end for}
+    <row class="product-list-sum">
+    Сумма заказа: ${Order.PriceAfterDiscount | formatDecimal("0")} &#8381;
+    </row>
+    </column>
+    </row>
+    <row>
+      <h2>Как до нас добраться: </h2>
+    </row>
+    <row class="full-width-image">
+      <a href="https://yandex.ru/maps/213/moscow/?um=constructor%3AzpiHfr6YKv67fij9g9qAAwgIuawOwa1_&%3Bsource=constructorLink&mode=usermaps&ll=37.664284%2C55.705792&z=15"><img src="http://sport-marafon.ru/mail/Transaction/20161017-mp1.jpg" target="_blank" alt="Франция" /></a>
+    </row>
+    <row class="one-column content">
+      <column>
+        <row class="button content">
+          <center>
+          <div><!--[if mso]>
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://yandex.ru/maps/213/moscow/?um=constructor%3AzpiHfr6YKv67fij9g9qAAwgIuawOwa1_&%3Bsource=constructorLink&mode=usermaps&ll=37.664284%2C55.705792&z=15" target="_blank" stroke="f" fillcolor="#23AC5A" style="height:40px;v-text-anchor:middle;width:220px;" >
+              <w:anchorlock/>
+              <center>
+            <![endif]-->
+                <a href="https://yandex.ru/maps/213/moscow/?um=constructor%3AzpiHfr6YKv67fij9g9qAAwgIuawOwa1_&%3Bsource=constructorLink&mode=usermaps&ll=37.664284%2C55.705792&z=15" target="_blank" style="background-color:#23AC5A;color:#FFFFFF; display:inline-block; font-family:sans-serif;font-size:13px; font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:220px;-webkit-text-size-adjust:none;" >ПОСМОТРЕТЬ НА Я.КАРТАХ</a>
+            <!--[if mso]>
+              </center>
+            </v:rect>
+          <![endif]--></div>
+        </center>
+        </row>
+      </column>
+    </row>
+
+
+    <row>
+      <h3>Координаты магазина:</h3>
+<p>Широта: 55°42′22.37″N (55.706213)<br>
+Долгота: 37°39′59.27″E (37.666464)</p>
+<h3>От станции МЦК "Автозаводская":</h3>
+<p>Выйдя из вагона поезда, поднимитесь по эскалатору и поверните налево в надземном переходе. Продолжайте идти по 5-й Кожуховской улице до пересечения с улицей Сайкина. Поверните налево на пешеходном переходе и пройдите 200 метров до входа в наш магазин.</p>
+<h3>От станции метро "Автозаводская":</h3>
+<p>Первый вагон из центра. Выйдя из метро, поверните направо. Через 10 метров снова поверните направо на 2-й Автозаводский проезд. Пройдите его до конца (около 200 метров). Перед вами будет Третье Транспортное кольцо, а слева надземный переход. По нему перейдите ТТК и продолжайте движение прямо по 5-й Кожуховской улице до улицы Сайкина. Поверните налево и пройдите 200 метров вдоль улицы Сайкина до нашего магазина.</p>
+<p>Если у вас возникли трудности с самовывозом, обратитесь в наш Контакт-центр по телефону: 8 (800) 333-14-41 или в чате на сайте.</p>
+<p>С уважением,<br>
+Команда “Спорт-Марафон”</p>
+    </row>
+    </column>
+</row>

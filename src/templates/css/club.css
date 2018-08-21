@@ -1,0 +1,31 @@
++.right-sidebar-club .left{
+  max-width: 190px;
+  background: #FFFFFF;
+  padding: 20px 0 32px 0;
+}
+
+.right-sidebar-club .right{
+  max-width: 350px;
+  background: #FFFFFF;
+  padding: 0 0 32px 0;
+}
+
+.right-sidebar-club .contents {
+  text-align: left;
+}
+
+.right-sidebar-club {
+  text-align: center;
+  background: #FFFFFF;
+  font-size: 0
+}
+
+.right-sidebar-club .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top
+}
+
+.clubButton {
+  padding: 20px 0 16px 0;
+}
