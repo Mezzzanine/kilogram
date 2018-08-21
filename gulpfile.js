@@ -41,7 +41,7 @@ gulp.task('build', function () {
         collapseWhitespace: true
      }))
     .pipe(typograf({
-      locale: ['ru']
+      locale: ['ru', 'en-US']
     }))
     .pipe(notify({
       title: "kilogram",
