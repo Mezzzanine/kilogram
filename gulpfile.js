@@ -43,11 +43,6 @@ gulp.task('build', function () {
     .pipe(typograf({
       locale: ['ru', 'en-US']
     }))
-    .pipe(notify({
-      title: "kilogram",
-      message: "Ready",
-      sound: "Pop"
-    }))
     .pipe(gulp.dest('./dist'))
 })
 
