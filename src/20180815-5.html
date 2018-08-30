@@ -14,11 +14,21 @@ preheader: "Ваш заказ уже в пути!"
     </row>
     <row>
 <center>
-      <h2>${Order.AdditionalData.trackingnumber}</h2>
+      <h2 class="highlight">${Order.AdditionalData.trackingnumber}</h2>
   </center>
     </row>
-    <row>
+  </column>
+</row>
+    <row class="one-column content">
+      <column>
+    <row class="alert">
       <p>Появление информации на сайте <a href='https://gdeposylka.ru/' target='_blank'>Гдепосылка.ру</a> осуществляется в течение трех рабочих дней.</p>
+    </row>
+  </column>
+</row>
+    <row class="one-column content">
+      <column>
+        <row>
       <p>Для получения подробной информации по заказу зайдите в <a href='https://sport-marafon.ru/new_personal/profile/' target='_blank'>Личный кабинет</a> на сайте или позвоните нам по телефону: 8 (800) 333-14-41. При обращении к менеджерам интернет-магазина ОБЯЗАТЕЛЬНО указывайте номер вашего заказа №{Order.WebsiteExternalId}.</p>
       <p>С уважением,<br>
       Команда “Спорт-Марафон”</p>

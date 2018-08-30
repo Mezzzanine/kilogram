@@ -101,7 +101,7 @@ style="background-color:{{ item.button.bgcolor }};border:1px solid {{ item.butto
 							<row class="two-column hide">
 								<column>
 									<row class="preheader">
-										{{ page.preheader }}
+										{{ page.preheader | safe }}
 									</row>
 								</column>
 								<column>
@@ -118,9 +118,9 @@ style="background-color:{{ item.button.bgcolor }};border:1px solid {{ item.butto
 									<table>
 										<tr>
 											<td><a href="https://sport-marafon.ru/catalog/" target="_blank">Каталог</a></td>
-											<td><a class="highlight" href="https://sport-marafon.ru/novie-postupleniya/" target="_blank">Новинки</a></td>
 											<td><a href="https://sport-marafon.ru/magazin/" target="_blank">Магазин</a></td>
 											<td><a href="https://sport-marafon.ru/contacts/" target="_blank">Контакты</a></td>
+											<td><a class="highlight" href="https://sport-marafon.ru/deals/" target="_blank">Акции</a></td>
 										</tr>
 									</table>
 								</center>

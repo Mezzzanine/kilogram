@@ -188,7 +188,12 @@ padding: 16px 0 16px 0;
 }
 .alert{
   border-left: 5px solid #4F4AC0;
+  padding-left: 15px;
 }
 .button {
   padding: 0 0 16px 0;
+}
+
+.highlight {
+  color: #4F4AC0;
 }

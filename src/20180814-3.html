@@ -11,13 +11,36 @@ preheader: "Ваш заказ №{Order.WebsiteExternalId} ожидает опл
       </h1>
     <p>Спасибо, что выбрали “Спорт-Марафон”.</p>
     </row>
+    <row>
+      <p>
+        Для оплаты заказа пройдите по <a href='${Order.AdditionalData.paylink}' target='_blank'>ссылке</a>.
+</p>
+<p>
+Или скопируйте данную ссылку в адресную строку браузера:<br>
+<b>${Order.AdditionalData.paylink}</b>
+</p>
+<p>
+После перехода по ссылке вы попадете на наш сайт, где вам нужно будет подтвердить адрес вашей электронной почты и нажать на кнопку «Оплатить».
+</p>
+<p>
+Далее вы будете переадресованы на сайт платежной системе, там вам необходимо будет ввести данные вашей банковской карты и ввести код подтверждения из смс-сообщения.
+</p>
+    </row>
+  </column>
+</row>
+<row class="one-column content">
+  <column>
+    <p>
+    Состав вашего заказа:
+    </p>
+  </column>
+</row>
     <row class="product-table">
       <column>
         @{ for purchase in Order.Purchases }
         <row>
           <table class="product-list">
             <tr>
-              <td class="product-number">1.</td>
               <td class="product-list-img hide"><a href="${purchase.Product.Url}" target="_blank"><img src="${purchase.Product.PictureUrl}" alt="${purchase.Product.DisplayName}"/></a>
               </td>
                 <td class="product-list-name"><a href="${purchase.Product.Url}" target="_blank">${purchase.Product.DisplayName}</a></td>
@@ -33,17 +56,8 @@ preheader: "Ваш заказ №{Order.WebsiteExternalId} ожидает опл
     </row>
     </column>
     </row>
-    <row>
-      <p>Для оплаты заказа:</p>
-      <ul>
-        <li>Зайдите в Личный кабинет и нажмите на кнопку “Оформить заказ” или перейдите по прямой ссылке [Ссылка на платежную систему].
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-      </ul>
-    </row>
+    <row class="one-column content">
+      <column>
     <row>
       <p>Вы можете следить за актуальным статусом своего заказа в Личном кабинете на сайте “Спорт-Марафон”.</p>
       <p>Чтобы аннулировать заказ, воспользуйтесь функцией отмены заказа, которая доступна в Личном кабинете или по телефону: 8 (800) 333-14-41. При обращении к менеджерам интернет-магазина ОБЯЗАТЕЛЬНО указывайте номер вашего заказа №{Order.WebsiteExternalId}.</p>
