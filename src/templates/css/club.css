@@ -17,7 +17,7 @@
 
 .right-sidebar-club {
   background: #FFFFFF;
-  font-size: 0
+  font-size: 0;
 }
 
 .right-sidebar-club .column {
@@ -28,6 +28,7 @@
 
 .left-sidebar-club {
   text-align: left;
+    padding-left: 30px;
 }
 
 .left-sidebar-club .column.left {
