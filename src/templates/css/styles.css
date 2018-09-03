@@ -243,6 +243,6 @@ img {
     }
 }
 
-.phone {
+.phone .nowrap{
   white-space: nowrap
 }
