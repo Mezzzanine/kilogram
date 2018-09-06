@@ -91,6 +91,9 @@ img {
   text-align: center;
   font-size: 0
 }
+.pad {
+padding-bottom: 35px;
+}
 
 .one-column .column {
   width: 100%;
@@ -110,7 +113,7 @@ img {
 
 .two-column {
   text-align: center;
-  font-size: 0
+  font-size: 0;
 }
 
 .two-column .column {
