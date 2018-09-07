@@ -14,7 +14,6 @@ preheader: "Запланированные лекции об активном о
         @{ else }Здравствуйте, ${Recipient.OnlyStandardFirstName}!
         @{ end if}
       </h1>
-      <p>Рада, что вы проявляете интерес к нашим лекциям и встречам.</p>
       <p>На этой неделе приглашаю вас на мероприятия Клуба Путешественников:</p>
     </row>
   </column>
@@ -71,7 +70,7 @@ preheader: "Запланированные лекции об активном о
 <li>22 августа, среда, 19:30 - Непальские Гималаи - классические и альтернативные маршруты</li>
 <li>23 августа, четверг, 19:30 - Другая Европа. Из цикла “Вокруг света на велосипеде”</li>
 </ul>
-<p>Если вы не можете приехать на встречу или посмотреть прямую трансляцию — ничего страшного. Все лекции мы стараемся транслировать в прямом эфире на нашем <a href='https://www.youtube.com/watch?v=412rSTKcmH0&list=PL-7bWOwIK0XSGajaXN8kjXnB9VrVqXRK9' target='_blank'>youtube-канале</a>.</p>
+<p>Если вы не можете приехать на встречу - ничего страшного! Почти каждую лекцию мы стараемся записать на видео и затем разместить на нашем канале <a href='https://www.youtube.com/watch?v=412rSTKcmH0&list=PL-7bWOwIK0XSGajaXN8kjXnB9VrVqXRK9' target='_blank'>youtube-канале</a>.</p>
     </row>
   </column>
 </row>
@@ -109,7 +108,7 @@ preheader: "Запланированные лекции об активном о
   <![endif]-->
   <column>
     <row class="half-width-image">
-      <a href="https://www.facebook.com/Sportmarafon" target="_blank"><img src="https://sport-marafon.ru/mail/2018/bl/20190903-bn2.jpg"  alt="Facebook" /></a>
+      <a href="https://www.facebook.com/Sportmarafon" target="_blank"><img src="https://sport-marafon.ru/mail/2018/cl/20190903-bn2.jpg"  alt="Facebook" /></a>
     </row>
   </column>
   <!--[if (gte mso 9)|(IE)]>
@@ -117,7 +116,7 @@ preheader: "Запланированные лекции об активном о
   <![endif]-->
   <column>
     <row class="half-width-image">
-      <a href="https://vk.com/club45599639" target="_blank"><img src="https://sport-marafon.ru/mail/2018/bl/20190903-bn1.jpg"  alt="VK" /></a>
+      <a href="https://vk.com/club45599639" target="_blank"><img src="https://sport-marafon.ru/mail/2018/cl/20190903-bn1.jpg"  alt="VK" /></a>
     </row>
   </column>
   <!--[if (gte mso 9)|(IE)]>
@@ -130,7 +129,7 @@ preheader: "Запланированные лекции об активном о
   <column>
     <row>
       <h3>Схема проезда</h3>
-<p>В день мероприятия мы напомним вам о лекции еще одним письмом. Событие состоиться по адресу: ${lecture.Adress}</p>
+<p>Если вы зарегистрируетесь на лекцию, в день мероприятия мы напомним вам о нем письмом. Наш лекторий находится по адресу: ${lecture.Adress}</p>
 </row>
 <row class="full-width-image">
   <a href="https://yandex.ru/maps/213/moscow/?um=constructor%3AzpiHfr6YKv67fij9g9qAAwgIuawOwa1_&%3Bsource=constructorLink&mode=usermaps&ll=37.664284%2C55.705792&z=15"><img src="http://sport-marafon.ru/mail/2018/tr/20180830-bn1.jpg" target="_blank" alt="Схема проезда" /></a>
@@ -188,3 +187,12 @@ preheader: "Запланированные лекции об активном о
 </table>
 <![endif]-->
 </row>
+<!---Блок акций--->
+@{if Count(FilteredProducts.Offerforbanner.WithMax1.Products) >0}
+@{for offer in FilteredProducts.Offerforbanner.WithMax1.Products}
+<row class="full-width-image-last">
+  <a href="${offer.url}"><img src="${offer.pictureurl}" target="_blank" alt="${offer.displayname}" /></a>
+</row>
+@{end for}
+@{end if}
+<!---/Блок акций--->
