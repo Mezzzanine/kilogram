@@ -6,6 +6,7 @@ a {
   /* Set sexy underline styling for links except images */
   text-decoration: underline;
   color: #2837b8;
+  white-space: nowrap;
 }
 
 h1 {
