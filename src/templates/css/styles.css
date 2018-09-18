@@ -56,6 +56,13 @@ img {
   display: block;
   padding: 0 0 16px 0;
 }
+
+.full-width-image-middle{
+  background: #FFFFFF;
+  display: block;
+  padding: 0 0 46px 0;
+}
+
 .full-width-image-last{
   background: #EDEEEE;
   display: block;
@@ -64,6 +71,7 @@ img {
 .full-width-image img {
   width: 100%;
   height: auto;
+  display: block;
 }
 .hb img {
   width: 100%;
