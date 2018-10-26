@@ -105,6 +105,12 @@
   height: 70px;
   vertical-align: top;
 }
+.itemTitleCustom {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 0 8px 10px;
+  vertical-align: top;
+}
 
 .itemTitle a {
   color: #000000;
@@ -117,6 +123,12 @@
 .priceNew {
   font-size: 18px;
   color: #E01010;
+  padding: 0 0 0 10px;
+}
+
+.priceCustom {
+  font-size: 18px;
+  color: #000000;
   padding: 0 0 0 10px;
 }
 
