@@ -1,5 +1,5 @@
 .body {
-  background-color: #0B1C48;
+  background-color: #263284;
 }
 
 .footer {
@@ -9,7 +9,7 @@
 .logo {
   padding: 16px;
   text-align: center;
-  background-color: #0B1C48;
+  background-color: #263284;
 }
 
 .logo img {
@@ -17,7 +17,7 @@
 }
 
 .content {
-  background-color: #0B1C48;
+  background-color: #263284;
   padding: 16px 0;
 }
 
@@ -89,4 +89,10 @@ a {
 
 .full-width-image img{
   padding-top: 25px;
+  background: #0B1C48;
+
+}
+
+.pumoriPosition {
+font-size: 12px;
 }
