@@ -89,10 +89,13 @@ a {
 
 .full-width-image img{
   padding-top: 25px;
-  background: #0B1C48;
 
 }
 
+.half-width-image {
+  background: #263284;
+  padding-bottom: 15px;
+}
 .pumoriPosition {
 font-size: 12px;
 }
