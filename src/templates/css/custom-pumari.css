@@ -1,5 +1,5 @@
 .body {
-  background-color: #263284;
+  background-color: #454892;
 }
 
 .footer {
@@ -17,7 +17,7 @@
 }
 
 .content {
-  background-color: #263284;
+  background-color: #454892;
   padding: 16px 0;
 }
 
@@ -58,7 +58,7 @@
 .menu a {
   font-size: 12px;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 .menu a.highlight {
@@ -76,7 +76,7 @@
 table {
   border-spacing: 0;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-  color: #FFFFFF
+  color: #ffffff
 }
 a {
   text-decoration: underline;
@@ -84,7 +84,7 @@ a {
 }
 
 .full-width-image a img{
-  background: #0B1C48;
+  background: #ffffff;
 }
 
 .full-width-image img{
@@ -93,7 +93,7 @@ a {
 }
 
 .half-width-image {
-  background: #263284;
+  background: #ffffff;
   padding-bottom: 15px;
 }
 .pumoriPosition {
