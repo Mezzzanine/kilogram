@@ -1,0 +1,98 @@
+---
+layout: default
+preheader: "Мы сохранили для вас список просмотренных товаров"
+
+---
+<row class="one-column content">
+  <column>
+    <row>
+      <h1>@{ if IsEmpty(Recipient.OnlyStandardFirstName) }Здравствуйте!
+      @{ else }Здравствуйте, ${Recipient.OnlyStandardFirstName}!
+      @{ end if}
+      </h1>
+    <p>Вы смотрели товары на сайте, но так и не оформили заказ.</p>
+    <p>Мы решили позаботиться о вас и собрать их в одном месте, чтобы вам было удобнее вернуться к просмотру и сделать покупку.</p>
+    </row>
+    <row>
+    </row>
+  </column>
+</row>
+    <row class="product-table">
+      <column>
+        @{ for purchase in Order.Purchases }
+        <row>
+          <table class="product-list">
+            <tr>
+              <td class="product-list-img hide"><a href="${purchase.Product.Url}" target="_blank"><img src="${purchase.Product.PictureUrl}" alt="${purchase.Product.DisplayName}"/></a>
+              </td>
+                <td class="product-list-name"><a href="${purchase.Product.Url}" target="_blank">${purchase.Product.DisplayName}</a></td>
+                <td class="product-list-qty">${ purchase.Count }</td>
+                <td class="product-list-price"><span class="priceNew">${ purchase.Cost | formatDecimal("0")} &#8381;</span><br />@{ if Product.OldPrice ! = null }
+<span class="priceOld">${formatDecimal(Product.OldPrice, 'N0')} &#8381;</span>@ {else} @{end if}</td>
+            </tr>
+          </table>
+        </row>
+        @{end for}
+
+    <row class="one-column content">
+      <column>
+        <row>
+        </row>
+        <row>
+        </row>
+      </column>
+    </row>
+
+    <row class="one-column content">
+      <column>
+        <row>
+          <h3>Возможно, вам также могут понравиться эти товары:
+          </h3>
+        </row>
+        <row>
+        </row>
+      </column>
+    </row>
+        <row class="product-table">
+          <column>
+            @{ for purchase in Order.Purchases }
+            <row>
+              <table class="product-list">
+                <tr>
+                  <td class="product-list-img hide"><a href="${purchase.Product.Url}" target="_blank"><img src="${purchase.Product.PictureUrl}" alt="${purchase.Product.DisplayName}"/></a>
+                  </td>
+                    <td class="product-list-name"><a href="${purchase.Product.Url}" target="_blank">${purchase.Product.DisplayName}</a></td>
+                    <td class="product-list-qty">${ purchase.Count }</td>
+                    <td class="product-list-price"><span class="priceNew">${ purchase.Cost | formatDecimal("0")} &#8381;</span><br />@{ if Product.OldPrice ! = null }
+    <span class="priceOld">${formatDecimal(Product.OldPrice, 'N0')} &#8381;</span>@ {else} @{end if}</td>
+                </tr>
+              </table>
+            </row>
+
+        <row class="one-column content">
+          <column>
+            <row>
+            </row>
+            <row>
+            </row>
+          </column>
+        </row>
+
+        <row class="one-column content">
+          <column>
+            <row class="button content">
+              <center>
+              <div><!--[if mso]>
+                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://sport-marafon.ru/catalog/" target="_blank" stroke="f" fillcolor="#4F4AC0" style="height:40px;v-text-anchor:middle;width:238px;" >
+                  <w:anchorlock/>
+                  <center>
+                <![endif]-->
+                    <a href="https://sport-marafon.ru/catalog/" target="_blank" style="background-color:#4F4AC0;color:#FFFFFF; display:inline-block; font-family:sans-serif;font-size:14px; line-height:40px;text-align:center;text-decoration:none;width:238px;-webkit-text-size-adjust:none;" >Все товары</a>
+                <!--[if mso]>
+                  </center>
+                </v:rect>
+              <![endif]--></div>
+            </center>
+            </row>
+          </column>
+        </row>
