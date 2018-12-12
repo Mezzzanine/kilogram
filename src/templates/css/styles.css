@@ -209,6 +209,19 @@ padding-bottom: 35px;
   padding: 0 0 32px 0;
 }
 
+.left-sidebar .left-thin {
+  max-width: 140px;
+  background: #FFFFFF;
+  padding: 0 0 32px 0;
+  vertical-align: top;
+}
+
+.left-sidebar .right-thin {
+  max-width: 390px;
+  background: #FFFFFF;
+  padding: 0 0 32px 0;
+}
+
 .left-sidebar .contents {
   text-align: left;
 }
