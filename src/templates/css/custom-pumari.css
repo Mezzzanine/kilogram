@@ -1,5 +1,5 @@
 .body {
-  background-color: #454892;
+  background-color: #263284;
 }
 
 .footer {
@@ -17,8 +17,8 @@
 }
 
 .content {
-  background-color: #454892;
-  padding: 16px 0;
+  background-color: #263284;
+  padding: 8px 0;
 }
 
 .preheader {
@@ -71,7 +71,7 @@
 }
 
 .alert{
-  border-left: 5px solid #4F4AC0;
+  border-left: 5px solid #263284;
 }
 table {
   border-spacing: 0;
@@ -97,18 +97,25 @@ a {
 }
 
 .full-width-image a img{
-  background: #ffffff;
+  background: #263284;
 }
 
-.full-width-image img{
-  padding-top: 25px;
+.full-width-image {
+  background: #263284;
+}
 
+.two-column ul{
+padding-left: 16px;
 }
 
 .half-width-image {
-  background: #ffffff;
+  background: #263284;
   padding-bottom: 15px;
 }
 .pumoriPosition {
 font-size: 12px;
+}
+
+.fixGmail {
+  color:#FFFFFF;
 }

@@ -30,7 +30,6 @@
 
 .content {
   background-color: #ffffff;
-  padding: 0 0 16px 0;
 }
 
 .preheader {
@@ -203,7 +202,7 @@ padding: 16px 0 16px 0;
   padding-left: 15px;
 }
 .button {
-  padding: 0 0 16px 0;
+  padding: 0 0 8px 0;
 }
 
 .highlight {
