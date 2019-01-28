@@ -78,6 +78,7 @@ img {
   height: auto;
   background: #FFFFFF;
   display: block;
+  padding: 5px 0 16px 0;
 }
 
 .half-width-image {
