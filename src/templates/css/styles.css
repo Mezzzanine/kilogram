@@ -92,6 +92,23 @@ img {
   align: center;
 }
 
+.half-width-image-lable {
+  background: #FFFFFF;
+  display: block;
+  padding: 0 0 10px 0;
+  max-width: 238px;
+  text-align: center;
+}
+.half-width-image-lable img {
+  align: center;
+}
+
+.half-width-image-h3 {
+  padding: 0 0 32px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 @-ms-viewport {
   width: device-width
 }
