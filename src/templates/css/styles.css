@@ -92,6 +92,23 @@ img {
   align: center;
 }
 
+.quat-width-image {
+  background: #FFFFFF;
+  display: block;
+  padding: 0 0 32px 0;
+  max-width: 270px;
+  text-align: center;
+}
+.quat-width-image img {
+  align: center;
+}
+
+.quat-column {
+  max-width: 100px;
+  display: inline-block;
+  padding: 15px;
+  background: #FFFFFF;
+}
 .half-width-image-lable {
   background: #FFFFFF;
   display: block;
@@ -189,6 +206,35 @@ padding-bottom: 35px;
   padding-top: 10px
 }
 
+.four-column {
+  text-align: center;
+  font-size: 0;
+}
+
+.four-column .inner {
+  padding: 0px;
+}
+
+.four-column .column {
+  width: 100%;
+  max-width: 270px;
+  display: inline-block;
+  vertical-align: top
+}
+
+.four-column .contents {
+  text-align: left
+}
+
+.four-column img {
+  width: 100%;
+  height: auto
+}
+
+.four-column .text {
+  padding: 16px 0
+}
+
 .left-sidebar {
   text-align: center;
   font-size: 0;
@@ -212,6 +258,32 @@ padding-bottom: 35px;
   max-width: 340px;
   background: #FFFFFF;
   padding: 0 0 32px 0;
+}
+
+.left-sidebar-klatt {
+  font-size: 0;
+  background: #FFFFFF;
+  text-align: center;
+}
+
+.left-sidebar-klatt .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle
+}
+
+.left-sidebar-klatt .left {
+  max-width: 150px;
+  background: #FFFFFF;
+  padding: 32px 0 0 0;
+  vertical-align: top;
+}
+
+.left-sidebar-klatt .right {
+  max-width: 390px;
+  background: #FFFFFF;
+  padding: 32px 0 32px 0;
+  text-align: left;
 }
 
 .product-table .left-sidebar .left {
