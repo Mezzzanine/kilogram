@@ -212,6 +212,7 @@ padding: 16px 0 16px 0;
 
 .highlight {
   color: #4F4AC0;
+  font-weight: bold;
 }
 
 .right p:first-child {
