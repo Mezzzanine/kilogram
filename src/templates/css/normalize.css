@@ -46,6 +46,7 @@ ol, ul {
   /* We don't touch horizontal margins to prevent hiding bullets in Oultook */
   margin-top: .1em;
   margin-bottom: .1em;
+  padding-bottom: 20px;
 }
 
 ol li, ul li {
