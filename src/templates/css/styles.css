@@ -275,14 +275,14 @@ padding-bottom: 35px;
 .left-sidebar-klatt .left {
   max-width: 150px;
   background: #FFFFFF;
-  padding: 32px 0 0 0;
+  padding: 16px 0 16px 0;
   vertical-align: top;
 }
 
 .left-sidebar-klatt .right {
   max-width: 390px;
   background: #FFFFFF;
-  padding: 32px 0 32px 0;
+  padding: 16px 0 32px 0;
   text-align: left;
 }
 
@@ -300,14 +300,14 @@ padding-bottom: 35px;
 }
 
 .left-sidebar .left-thin {
-  max-width: 140px;
+  max-width: 100px;
   background: #FFFFFF;
   padding: 0 0 32px 0;
   vertical-align: top;
 }
 
 .left-sidebar .right-thin {
-  max-width: 390px;
+  max-width: 430px;
   background: #FFFFFF;
   padding: 0 0 32px 0;
 }
