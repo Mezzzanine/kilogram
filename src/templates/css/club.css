@@ -1,0 +1,103 @@
+.right-sidebar-club .left{
+  max-width: 190px;
+  background: #FFFFFF;
+  padding: 20px 0 32px 0;
+}
+
+.right-sidebar-club .right{
+  max-width: 350px;
+  background: #FFFFFF;
+  padding: 0 0 5px 0;
+  text-align: center;
+}
+
+.right-sidebar-club .contents {
+  text-align: left;
+}
+
+.right-sidebar-club {
+  background: #FFFFFF;
+  font-size: 0;
+}
+
+.right-sidebar-club .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.left-sidebar-club {
+  text-align: left;
+    padding-left: 30px;
+}
+
+.left-sidebar-club .column.left {
+ padding: 0 0 20px 0;
+}
+
+.left-sidebar-club .left{
+  max-width: 220px;
+  background: #FFFFFF;
+  padding: 20px 0 32px 0;
+}
+
+.left-sidebar-club .right{
+  max-width: 310px;
+  background: #FFFFFF;
+  padding: 0 0 32px 0;
+}
+
+.left-sidebar-club .contents {
+  text-align: left;
+}
+
+.left-sidebar-club {
+  background: #FFFFFF;
+  font-size: 0
+}
+
+.left-sidebar-club .column {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.clubButton {
+  padding: 0 0 20px 0;
+}
+.clubImage {
+  background: #FFFFFF;
+  display: block;
+  padding: 0 0 20px 0;
+  max-width: 187px;
+  text-align: left;
+}
+.clubImage img {
+  align: left;
+  padding: 0;
+}
+
+.clubTitle {
+  font-size: 18px;
+  font-weight: bold;
+  height: 90px;
+  vertical-align: top;
+  margin-top: 0;
+}
+.clubDate {
+  padding: 17px 0 10px;
+}
+
+.clubImageLeft {
+  align: left;
+
+}
+.clubPosition {
+  margin: 0;
+}
+.clubCrisText {
+  margin: 0px;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: bold;
+}

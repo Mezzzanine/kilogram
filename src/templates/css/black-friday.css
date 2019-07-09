@@ -1,5 +1,5 @@
 .body {
-  background-color: #263284;
+  background-color: #000000;
 }
 
 .footer {
@@ -9,7 +9,7 @@
 .logo {
   padding: 16px;
   text-align: center;
-  background-color: #263284;
+  background-color: #000000;
 }
 
 .logo img {
@@ -17,8 +17,9 @@
 }
 
 .content {
-  background-color: #263284;
-  padding: 8px 0;
+  background-color: #000000;
+  padding: 16px 0;
+  color: #ffffff;
 }
 
 .preheader {
@@ -62,7 +63,7 @@
 }
 
 .menu a.highlight {
-  color: #FF6900;
+  color: #fae202;
 }
 
 .menu td {
@@ -71,51 +72,31 @@
 }
 
 .alert{
-  border-left: 5px solid #263284;
+  border-left: 5px solid #fae202;
 }
 table {
   border-spacing: 0;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-  color: #ffffff
+  color: #000000;
 }
 a {
   text-decoration: underline;
-  color: #C1D400;
-}
-
-.alert2{
-  border-left: 5px solid #ffffff;
-}
-table {
-  border-spacing: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-  color: #ffffff
-}
-a {
-  text-decoration: underline;
-  color: #C1D400;
+  color: #fae202;
 }
 
 .full-width-image a img{
-  background: #263284;
+  background: #000000;
 }
 
-.full-width-image {
-  background: #263284;
-}
+.full-width-image img{
+  padding-top: 25px;
 
-.two-column ul{
-padding-left: 16px;
 }
 
 .half-width-image {
-  background: #263284;
+  background: #000000;
   padding-bottom: 15px;
 }
 .pumoriPosition {
 font-size: 12px;
-}
-
-.fixGmail {
-  color:#FFFFFF;
 }

@@ -37,10 +37,10 @@
 	<div><!--[if mso]>
   <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ item.href }}" style="height:40px;v-text-anchor:middle;width:220px;" strokecolor="{{ item.button.bordercolor }}" fillcolor="{{ item.button.bgcolor }}">
     <w:anchorlock/>
-    <center style="color:{{ item.button.color }};font-family:sans-serif;font-size:14px;">{{ item.button.text }}</center>
+    <center style="color:{{ item.button.color }};font-family:sans-serif;font-size:13px;font-weight:bold;">{{ item.button.text }}</center>
   </v:rect>
 <![endif]--><a href="{{ item.href }}"
-style="background-color:{{ item.button.bgcolor }};border:1px solid {{ item.button.bordercolor }};color:{{ item.button.color }};display:inline-block;font-family:sans-serif;font-size:14px;line-height:40px;text-align:center;text-decoration:none;width:220px;-webkit-text-size-adjust:none;mso-hide:all;">{{ item.button.text }}</a></div>
+style="background-color:{{ item.button.bgcolor }};border:1px solid {{ item.button.bordercolor }};color:{{ item.button.color }};display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:220px;-webkit-text-size-adjust:none;mso-hide:all;">{{ item.button.text }}</a></div>
 {% else %}
 		<div><!--[if mso]>
 			<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ item.href }}" target="_blank" stroke="f" fillcolor="{{ item.button.bgcolor }}" style="height:40px;v-text-anchor:middle;width:220px;" >
@@ -78,6 +78,7 @@ style="background-color:{{ item.button.bgcolor }};border:1px solid {{ item.butto
 		{% include './css/styles.css' %}
 		{% include './css/normalize.css' %}
 		{% include './css/custom.css' %}
+		{% include './css/black-friday.css' %}
 	</style>
 	<!--[if (gte mso 9)|(IE)]>
 	<style type="text/css">
@@ -120,7 +121,7 @@ style="background-color:{{ item.button.bgcolor }};border:1px solid {{ item.butto
 											<td><a href="https://sport-marafon.ru/catalog/" target="_blank">Каталог</a></td>
 											<td><a href="https://sport-marafon.ru/magazin/" target="_blank">Магазин</a></td>
 											<td><a href="https://sport-marafon.ru/contacts/" target="_blank">Контакты</a></td>
-											<td><a class="highlight" href="https://sport-marafon.ru/deals/" target="_blank">Акции</a></td>
+											<td><a class="highlight" href="https://sport-marafon.ru/novie-postupleniya/" target="_blank">Новинки</a></td>
 										</tr>
 									</table>
 								</center>
@@ -166,7 +167,7 @@ style="background-color:{{ item.button.bgcolor }};border:1px solid {{ item.butto
 							<row class="two-column footer2">
 								<column>
 									<row>
-										<a href="mailto:pro@sport-marafon.ru">Обратная связь</a> | <a href="${Message.UnsubscribeLink}">Отписаться</a><br><no-typography> © 2012 — ${ Formatdatetime(Message.SendingDateTime, 'yyyy') } Спорт-Марафон </no-typography>
+										<a href="mailto:pro@sport-marafon.ru">Обратная связь</a> | <a href="${Message.UnsubscribeLink}">Отписаться</a><br> © 2012 — 2018
 									</row>
 								</column>
 								<column>

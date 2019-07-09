@@ -1,0 +1,37 @@
+---
+layout: default
+preheader: "Ваш заказ уже в пути!"
+---
+<row class="one-column content">
+  <column>
+    <row>
+      <h1>@{ if IsEmpty(Recipient.OnlyStandardFirstName) }Здравствуйте!
+      @{ else }Здравствуйте, ${Recipient.OnlyStandardFirstName}!
+      @{ end if}
+      </h1>
+      <p>Ваш заказ №{Order.WebsiteExternalId} упакован и передан на почту  / в курьерскую службу.</p>
+      <p>Вы можете отследить свою посылку на сайте <a href='https://gdeposylka.ru/' target='_blank'>Гдепосылка.ру</a>, для этого введите в поисковую строку номер идентификатора отправления:</p>
+    </row>
+    <row>
+<center>
+      <h2 class="highlight">${Order.AdditionalData.trackingnumber}</h2>
+  </center>
+    </row>
+  </column>
+</row>
+    <row class="one-column content">
+      <column>
+    <row class="alert">
+      <p>Появление информации на сайте <a href='https://gdeposylka.ru/' target='_blank'>Гдепосылка.ру</a> осуществляется в течение трех рабочих дней.</p>
+    </row>
+  </column>
+</row>
+    <row class="one-column content">
+      <column>
+        <row>
+      <p>Для получения подробной информации по заказу зайдите в <a href='https://sport-marafon.ru/new_personal/profile/' target='_blank'>Личный кабинет</a> на сайте или позвоните нам по телефону: 8 (800) 333-14-41. При обращении к менеджерам интернет-магазина ОБЯЗАТЕЛЬНО указывайте номер вашего заказа №{Order.WebsiteExternalId}.</p>
+      <p>С уважением,<br>
+      Команда “Спорт-Марафон”</p>
+    </row>
+    </column>
+</row>
