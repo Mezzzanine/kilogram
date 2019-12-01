@@ -212,6 +212,10 @@ padding: 16px 0 16px 0;
   border-left: 5px solid #4F4AC0;
   padding-left: 15px;
 }
+.mark{
+  color: #ffffff;
+  background-color: #91278f;
+}
 .button {
   padding: 0 0 32px 0;
 }
