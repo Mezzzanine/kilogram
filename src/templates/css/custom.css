@@ -215,6 +215,7 @@ padding: 16px 0 16px 0;
 .mark{
   color: #ffffff;
   background-color: #91278f;
+  line-height: 2em;
 }
 .button {
   padding: 0 0 32px 0;
