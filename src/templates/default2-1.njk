@@ -1,0 +1,194 @@
+
+{% macro products() %}
+{% for item in page.items %}
+{% if loop.index % 2 != 0 %}
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<![endif]-->
+{% endif %}
+{% if loop.index % 2 == 0 %}
+<!--[if (gte mso 9)|(IE)]>
+</td><td width="50%" valign="top">
+<![endif]-->
+{% endif %}
+<column>
+	<row class="itemImage">
+		<center>
+			<a href="{{ item.href }}" target="_blank"><img src="{{ item.image }}"></a>
+		</center>
+	</row>
+	<row class="itemTitle">
+		<a href="{{ item.href }}" target="_blank">{{ item.title }}</a>
+	</row>
+	<row class="itemBrand">
+		{{ item.brand }}
+	</row>
+	<row class="priceNew">
+		{{ item.priceNew }} ₽ {% if item.priceOld %}
+		<span class="priceOld">
+			{{ item.priceOld }} ₽
+		</span>
+		{% endif %}
+	</row>
+	<row class="itemButton">
+	<center>
+	{% if item.button.fill %}
+	<div><!--[if mso]>
+  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ item.href }}" style="height:40px;v-text-anchor:middle;width:220px;" strokecolor="{{ item.button.bordercolor }}" fillcolor="{{ item.button.bgcolor }}">
+    <w:anchorlock/>
+    <center style="color:{{ item.button.color }};font-family:sans-serif;font-size:13px;font-weight:bold;">{{ item.button.text }}</center>
+  </v:rect>
+<![endif]--><a href="{{ item.href }}"
+style="background-color:{{ item.button.bgcolor }};border:1px solid {{ item.button.bordercolor }};color:{{ item.button.color }};display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:220px;-webkit-text-size-adjust:none;mso-hide:all;">{{ item.button.text }}</a></div>
+{% else %}
+		<div><!--[if mso]>
+			<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ item.href }}" target="_blank" stroke="f" fillcolor="{{ item.button.bgcolor }}" style="height:40px;v-text-anchor:middle;width:220px;" >
+				<w:anchorlock/>
+				<center>
+			<![endif]-->
+					<a href="{{ item.href }}" target="_blank" style="background-color:{{ item.button.bgcolor }};color:{{ item.button.color }}; display:inline-block; font-family:sans-serif;font-size:13px; font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:220px;-webkit-text-size-adjust:none;" >{{ item.button.text }}</a>
+			<!--[if mso]>
+				</center>
+			</v:rect>
+		<![endif]--></div>
+		{% endif %}
+		</center>
+	</row>
+</column>
+{% if (loop.index % 2 == 0 and loop.last != true) %}
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</row><row class="two-column items">
+{% endif %}
+{% endfor %}
+{% endmacro %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<style>
+		{% include './css/styles.css' %}
+		{% include './css/normalize.css' %}
+		{% include './css/custom.css' %}
+	</style>
+	<!--[if (gte mso 9)|(IE)]>
+	<style type="text/css">
+		table {border-collapse: collapse;}
+	</style>
+	<![endif]-->
+</head>
+
+<body>
+	<table width="100%" class="body">
+		<tr>
+			<td>
+				<center class="wrapper">
+					<div class="webkit">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="600" align="center">
+						<tr>
+						<td>
+						<![endif]-->
+						<table class="outer" align="center">
+							<row class="two-column hide">
+								<column>
+									<row class="preheader">
+										{{ page.preheader | safe }}
+									</row>
+								</column>
+								<column>
+									<row class="preheader">
+										<a href="${Message.AccessibilityLink}">Открыть в браузере</a>
+									</row>
+								</column>
+							</row>
+							<row class="logo">
+								<a href="https://sport-marafon.ru?utm_source=russia-running&utm_medium=email&utm_campaign=lik"><img src="https://sport-marafon.ru/mail/2018/04/logo.png" alt=""></a>
+							</row>
+							<row class="menu content">
+								<center>
+									<table>
+										<tr>
+											<td><a href="https://sport-marafon.ru/catalog/?utm_source=russia-running&utm_medium=email&utm_campaign=lik" target="_blank">Каталог</a></td>
+											<td><a href="https://sport-marafon.ru/magazin/?utm_source=russia-running&utm_medium=email&utm_campaign=lik" target="_blank">Магазин</a></td>
+											<td><a href="https://sport-marafon.ru/contacts/?utm_source=russia-running&utm_medium=email&utm_campaign=lik" target="_blank">Контакты</a></td>
+											<td><a class="highlight" href="https://sport-marafon.ru/novie-postupleniya/?utm_source=russia-running&utm_medium=email&utm_campaign=lik" target="_blank">Новинки</a></td>
+										</tr>
+									</table>
+								</center>
+							</row>
+							{% block content %}{% endblock %}
+							<row class="two-column footer">
+								<!--[if (gte mso 9)|(IE)]>
+								<table width="100%">
+								<tr>
+								<td width="50%" valign="top">
+								<![endif]-->
+								<column>
+									<row>
+										Москва, <b>ул Сайкина, д. 4</b><br> м. Автозаводская
+									</row>
+								</column>
+								<!--[if (gte mso 9)|(IE)]>
+								</td><td width="50%" valign="top">
+								<![endif]-->
+								<column>
+									<row>
+										Ежедневно с 10:00 до 24:00 <b class="phone"><span class="nowrap">8 (800) 333-14-41</span></b>
+									</row>
+								</column>
+								<!--[if (gte mso 9)|(IE)]>
+								</td>
+								</tr>
+								</table>
+								<![endif]-->
+							</row>
+							<row class="social">
+								<center>
+								<table>
+									<tr>
+										<td><a href="https://www.facebook.com/Sportmarafon" target="_blank"><img src="https://sport-marafon.ru/mail/20161108/fb.png" /></a></td>
+										<td><a href="https://vk.com/club45599639" target="_blank"><img src="https://sport-marafon.ru/mail/20161108/vk.png" /></a></td>
+										<td><a href="https://instagram.com/sportmarafon/" target="_blank"><img src="https://sport-marafon.ru/mail/20161108/im.png" /></a></td>
+										<td><a href="https://www.youtube.com/channel/UC_aO4rIcQZGGt6Z62AwZ2Wg" target="_blank"><img src="https://sport-marafon.ru/mail/20161108/yt.png" /></a></td>
+									</tr>
+								</table>
+							</center>
+							</row>
+							<row class="two-column footer2">
+								<column>
+									<row>
+										<a href="mailto:pro@sport-marafon.ru">Обратная связь</a> | <a href="${Message.UnsubscribeLink}">Отписаться</a><br> © 2012 — 2020
+									</row>
+								</column>
+								<column>
+									<row>
+										Добавьте наш <a href="mailto:pro@sport-marafon.ru">e-mail</a> в вашу адресную книгу, чтобы не упустить ничего важного
+									</row>
+								</column>
+							</row>
+							<row class="footer3">
+							</row>
+						</table>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</div>
+				</center>
+		</tr>
+		</td>
+	</table>
+</body>
+
+</html>
