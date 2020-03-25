@@ -329,15 +329,16 @@ padding-bottom: 35px;
 }
 
 .right-sidebar .left {
-  max-width: 200px;
+  max-width: 150px;
   background: #FFFFFF;
   padding: 0 0 32px 0;
 }
 
 .right-sidebar .right {
-  max-width: 340px;
+  max-width: 390px;
   background: #FFFFFF;
   padding: 0 0 32px 0;
+  vertical-align: top;
 }
 
 .right-sidebar .contents {
